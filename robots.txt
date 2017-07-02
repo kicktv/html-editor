@@ -1,0 +1,7 @@
+User-agent: *
+Allow: /index.html
+Allow: /googlebeb493ed9c9deddf.html  
+Disallow: /video.html
+Disallow: /player.html
+Disallow: /CNAME
+Disallow: /README.md
