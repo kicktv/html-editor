@@ -1,0 +1,24 @@
+<!DOCTYPE html><html><head><meta charset="utf-8"><title> Test Video </title>
+<style type="text/css">video {object-fit: fill;}
+form input {width: 545px; height: 25px;}
+form button {height: 30px;}
+@media only screen and (max-width: 400px) {form input {width: auto; height:20px; } 
+form button {height: 25px;} }
+@media (max-width: 600px) {form input{width:300px; height:20px;}}
+@media (max-width: 500px){form input{width: 260px; height:20px;}}
+@media (max-width: 450px){form input{width: 230px; height:20px;}}
+@media (max-width: 600px) { video{width:auto; height:400px;}}
+@media (max-width: 600px) { video{width:auto; height:320px;}}
+@media (max-width: 500px) { video{width:auto; height:280px;}}
+@media (max-width: 450px) { video{width:auto; height:250px;}}
+@media (max-width: 400px) { video{width:auto; height:168px;}}
+</style></head><body><center> <h2> Test Video </h2>
+<form action="javascript:loadVideo()">
+<input type="url"  placeholder="file mp4 or mp3 or webm"  id="source">
+<button>Play</button></form><br>
+<video   id="vid3"  width="600"  height="400"  controls poster="" src="">
+</video><h2> Test Video </h3></center>
+<script type="text/javascript">function loadVideo() {
+var vid = document.getElementById('vid3');
+vid.src = document.getElementById('source').value;
+vid.poster = document.getElementById('poster').value;}</script></body></html>
