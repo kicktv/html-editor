@@ -1,5 +1,6 @@
 User-agent: *
 Allow: /index.html
+Allow: /img
 Allow: /googlebeb493ed9c9deddf.html  
 Disallow: /video.html
 Disallow: /player.html
