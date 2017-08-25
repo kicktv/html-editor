@@ -15,18 +15,8 @@
 <link rel="canonical" href="http://www.html-editor.tk/" /> 
 <style  type="text/css"> body {background-color:#eee; font-family: Tahoma, Verdana; }
 textarea {border: 2px solid; }input {width: 200px; height: 33px; font-size: 20px; color:red;}
-</style></head><body  text="black"><script language="JavaScript">
-if (top != window) {top.location = window.location;}
-function preview(){temp=document.tester.box.value,preWindow=open("","preWindow"," menubar=yes, scrollbars=yes"),
-preWindow.document.open(),preWindow.document.write(temp),preWindow.document.close()}
-if (window.location.href.indexOf("www.html-editor.tk") != -1) {
-} else {window.location = "http://www.html-editor.tk/";}
-function urlCheck() 
-{if(window.location.href=="http://www.html-editor.tk/"){}else{
-(window.location='http://www.html-editor.tk/');}}
-urlCheck()</script>
+</style></head><body  text="black"><script src='index.js' type='text/javascript'></script>
 <center><h1>HTML And Script Code Tester</h1><form name="tester">
 <textarea rows="25" cols="110" wrap="physical" name="box"></textarea><br>
-<input type="button" value="Test The HTML Code" onClick="preview()">
-<input type="reset" value="Clear Text Box">
+<input type="button" value="Test The HTML Code" onClick="preview()"><input type="reset" value="Clear Text Box">
 <br /><h1>HTML And Script Code Tester</h1></form></center></body></html>
