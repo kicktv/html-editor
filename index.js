@@ -1,9 +1,1 @@
-if (top != window) {top.location = window.location;}
-function preview(){temp=document.tester.box.value,preWindow=open("","preWindow"," menubar=yes, scrollbars=yes"),
-preWindow.document.open(),preWindow.document.write(temp),preWindow.document.close()}
-if (window.location.href.indexOf("www.html-editor.tk") != -1) {
-} else {window.location = "http://www.html-editor.tk/";}
-function urlCheck() 
-{if(window.location.href=="http://www.html-editor.tk/"){}else{
-(window.location='http://www.html-editor.tk/');}}
-urlCheck()
+var _0xc0a5=['preWindow','\x20menubar=yes,\x20scrollbars=yes','document','write','close','href','indexOf','www.html-editor.tk','http://www.html-editor.tk/','location','tester','box','value'];(function(_0x128f92,_0x3a2239){var _0xdd2067=function(_0x2094af){while(--_0x2094af){_0x128f92['push'](_0x128f92['shift']());}};_0xdd2067(++_0x3a2239);}(_0xc0a5,0x182));var _0x5c0a=function(_0x4a53d,_0x58a95e){_0x4a53d=_0x4a53d-0x0;var _0x27410e=_0xc0a5[_0x4a53d];return _0x27410e;};if(top!=window){top[_0x5c0a('0x0')]=window[_0x5c0a('0x0')];}function preview(){temp=document[_0x5c0a('0x1')][_0x5c0a('0x2')][_0x5c0a('0x3')],preWindow=open('',_0x5c0a('0x4'),_0x5c0a('0x5')),preWindow[_0x5c0a('0x6')]['open'](),preWindow[_0x5c0a('0x6')][_0x5c0a('0x7')](temp),preWindow[_0x5c0a('0x6')][_0x5c0a('0x8')]();}if(window[_0x5c0a('0x0')][_0x5c0a('0x9')][_0x5c0a('0xa')](_0x5c0a('0xb'))!=-0x1){}else{window[_0x5c0a('0x0')]=_0x5c0a('0xc');}function urlCheck(){if(window[_0x5c0a('0x0')][_0x5c0a('0x9')]=='http://www.html-editor.tk/'){}else{window['location']=_0x5c0a('0xc');}}urlCheck();
