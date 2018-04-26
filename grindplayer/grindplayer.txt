@@ -1,0 +1,13 @@
+Grind-Player
+-------------------
+http://www.html-editor.tk/grindplayer/GrindPlayer.swf?src=rtmp://63.237.48.28/live/MBC_ACTION&type=application/x-shockwave-flash&autoPlay=true&streamType=live&scaleMode=stretch&plugin_hls=http://www.html-editor.tk/grindplayer/flashlsOSMF.swf
+-----------------------------------------------------------------------------------------------------------------------------------
+<object style="visibility: visible;" id="StrobeMediaPlayback" data="http://www.html-editor.tk/grindplayer/GrindPlayer.swf" 
+name="StrobeMediaPlayback" type="application/x-shockwave-flash" height="480" width="840">
+<param value="true" name="allowFullScreen">
+<param value="direct" name="wmode">
+<param value="src=http://adtv.ercdn.net/adsport1/adsport1_720p.m3u8&type=application/x-shockwave-flash&autoPlay=true&streamType=live&scaleMode=stretch&plugin_hls=http://www.html-editor.tk/grindplayer/flashlsOSMF.swf&width=840&height=480" name="flashvars">
+</object>
+-----------------------------------------------------------------------------------------------------------------------------------
+<embed src="http://www.html-editor.tk/grindplayer/GrindPlayer.swf?src=http://adtv.ercdn.net/adsport1/adsport1_720p.m3u8&type=application/x-shockwave-flash&autoPlay=true&streamType=live&scaleMode=stretch&plugin_hls=http://www.html-editor.tk/grindplayer/flashlsOSMF.swf" type="application/x-shockwave-flash" pluginspage="http://www.macromedia.com/shockwave/download/index.cgi?P1_Prod_Version=ShockwaveFlash" play="false" allowFullScreen="true" height="400" width="700">
+-----------------------------------------------------------------------------------------------------------------------------------
