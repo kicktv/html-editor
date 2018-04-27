@@ -1,0 +1,15 @@
+bitdashplayer
+-----------------
+http://www.html-editor.tk/bitdashplayer/bitdashplayer.swf
+
+http://www.html-editor.tk/bitdashplayer/bitdashplayer.swf?src=http://rmtvlive-lh.akamaihd.net/i/rmtv_1@154306/index_0700_av-p.m3u8&poster=http://www.cdusport.com/wp-content/uploads/2013/08/real-madrid-tv.jpg&inputType=hls&apiCallback=bit359484828910&streamType=live&scalemode=stretch&autoPlay=false
+-----------------------------------------------------------------------------------------------------------------------------------
+<object style="visibility: visible;" id="StrobeMediaPlayback" data="http://www.html-editor.tk/bitdashplayer/bitdashplayer.swf" 
+name="StrobeMediaPlayback" type="application/x-shockwave-flash" height="480" width="840">
+<param value="true" name="allowFullScreen">
+<param value="direct" name="wmode">
+<param value="src=http://rmtvlive-lh.akamaihd.net/i/rmtv_1@154306/index_0700_av-p.m3u8&poster=http://www.cdusport.com/wp-content/uploads/2013/08/real-madrid-tv.jpg&inputType=hls&apiCallback=bit359484828910&streamType=live&scalemode=stretch&autoPlay=false&width=840&height=480" name="flashvars">
+</object>
+-----------------------------------------------------------------------------------------------------------------------------------
+<embed src="http://www.html-editor.tk/bitdashplayer/bitdashplayer.swf?src=http://rmtvlive-lh.akamaihd.net/i/rmtv_1@154306/index_0700_av-p.m3u8&poster=http://www.cdusport.com/wp-content/uploads/2013/08/real-madrid-tv.jpg&inputType=hls&apiCallback=bit359484828910&streamType=live&scalemode=stretch&autoPlay=false" type="application/x-shockwave-flash" pluginspage="http://www.macromedia.com/shockwave/download/index.cgi?P1_Prod_Version=ShockwaveFlash" play="false" allowFullScreen="true" height="400" width="700">
+-----------------------------------------------------------------------------------------------------------------------------------
