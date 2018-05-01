@@ -7,4 +7,32 @@ jwplayer("myJWplayer").setup({
 "playlist": [ {"image": "http://marocainonline.com/wp-content/uploads/2015/09/%D9%86%D8%B9%D9%85%D8%A7%D9%86-%D9%84%D8%AD%D9%84%D9%88-250x200.jpg",
 "sources": [ { "default": false,"file": "http://selevision9895-i.akamaihd.net/hls/live/219367/98950/1.m3u8", "label": "0",
 "type": "hls", "preload": "none" } ] } ], width: "100%", skin: "seven",  "primary": "html5", "aspectratio": "16:9", "hlshtml": true
-});</script></div></center></body></html>
+});</script></div>
+<a expr:name='data:post.id'/> <i class='fa fa-eye'/> <span id='postviews'/> Views
+ <script src='https://cdn.firebase.com/v0/firebase.js' type='text/javascript'></script>
+<script>
+$.each($("a[name]"), function(i, e) {
+var elem = $(e).parent().find("#postviews");
+var blogStats = new Firebase("https://YOUR-APP-NAME.firebaseio.com/pages/id/" + $(e).attr("name"));
+blogStats.once("value", function(snapshot) {
+var data = snapshot.val();
+var isnew = false;
+if(data == null) {
+data= {};
+data.value = 0;
+data.url = window.location.href;
+data.id = $(e).attr("name");
+isnew = true;
+}
+elem.text(data.value);
+data.value++;
+if(window.location.pathname!="/")
+{
+if(isnew)
+blogStats.set(data);
+else
+blogStats.child("value").set(data.value);
+}
+});
+});
+</script> </center></body></html>
