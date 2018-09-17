@@ -1,4 +1,4 @@
-# folder img
+[# folder img](http://www.html-editor.tk/img/)
 
 [bg-pattern.png](http://www.html-editor.tk/img/bg-pattern.png)
 
