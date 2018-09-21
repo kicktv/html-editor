@@ -1,2 +1,7 @@
+f4player skin  gray
 
 http://www.html-editor.tk/flash/player.swf?skin=/flash/mySkin.swf&video=https://dl.dropboxusercontent.com/s/iba6pfw63c1miil/film-misery-1990.mp4&thumbnail=/flash/f4player.jpg
+------------------------------------------------------------
+f4player skin red
+
+http://www.html-editor.tk/f4player/player.swf?skin=/f4player/mySkin.swf&video=https://dl.dropboxusercontent.com/s/iba6pfw63c1miil/film-misery-1990.mp4&thumbnail=/f4player/f4player.jpg
