@@ -10,7 +10,7 @@
 .overlay h1 {position: absolute; top:0px; left:10%; z-index: 1; 
 font-family: Arial,Helvetica,sans-serif; font-size: 15px; font-weight: 701; color: #0FFF00;}</style><script>
 function $_GET(e){var n={};return window.location.href.replace(location.hash,"").replace(/[?&]+([^=&]+)=?([^&]*)?/gi,function(e,o,t){n[o]=void 0!==t?t:""}),e?n[e]?n[e]:null:n}var stream=decodeURI($_GET("src"));
-document.write('<video id="video"   class="video-js vjs-default-skin vjs-big-play-centered vjs-controls-enabled" controls autoplay preload="auto"  poster="">
+document.write('<video id="video"   class="video-js vjs-default-skin vjs-big-play-centered vjs-controls-enabled" controls autoplay poster="">
 <source src="'+stream+'" type="application/x-mpegURL"></video>')
 ,function(e,o){var t=e.player=o("video"),n=document.getElementById("load-url"),r=document.getElementById("url");n.addEventListener("submit",function(e){return e.preventDefault(),t.src({src:r.value,type:"application/x-mpegURL"}),!1})}(window,window.videojs); </script>
 <div class="overlay"><a href='http://www.khaledtv.tk/' target="_blank" style='display: block'>
