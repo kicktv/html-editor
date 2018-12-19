@@ -8,10 +8,12 @@
 #video {position:absolute; z-index:0; height:100%;width:100%; padding:0; margin:0;} video {object-fit: fill;}
 .overlay a{ list-style-type:none; text-decoration:none;}
 .overlay h1 {position: absolute; top:0px; left:10%; z-index: 1; 
-font-family: Arial,Helvetica,sans-serif; font-size: 15px; font-weight: 701; color: #0FFF00;}</style><script>
-function $_GET(e){var n={};return window.location.href.replace(location.hash,"").replace(/[?&]+([^=&]+)=?([^&]*)?/gi,function(e,o,t){n[o]=void 0!==t?t:""}),e?n[e]?n[e]:null:n}var stream=decodeURI($_GET("src"));
-document.write('<video id="video"   class="video-js vjs-default-skin vjs-big-play-centered vjs-controls-enabled" 
-controls autoplay="autoplay" poster=""><source src="'+stream+'" type="application/x-mpegURL"></video>')
-,function(e,o){var t=e.player=o("video"),n=document.getElementById("load-url"),r=document.getElementById("url");n.addEventListener("submit",function(e){return e.preventDefault(),t.src({src:r.value,type:"application/x-mpegURL"}),!1})}(window,window.videojs); </script>
+font-family: Arial,Helvetica,sans-serif; font-size: 15px; font-weight: 701; color: #0FFF00;}</style>
+<script> function $_GET(e){var n={};return window.location.href.replace(location.hash,"").
+replace(/[?&]+([^=&]+)=?([^&]*)?/gi,function(e,o,t){n[o]=void 0!==t?t:""}),e?n[e]?n[e]:null:n}var stream=decodeURI($_GET("src"));
+document.write('<video id="video"   class="video-js vjs-default-skin vjs-big-play-centered vjs-controls-enabled" controls autoplay="autoplay" poster="">
+<source src="'+stream+'" type="application/x-mpegURL"></video>')
+,function(e,o){var t=e.player=o("video"),n=document.getElementById("load-url"),
+r=document.getElementById("url");n.addEventListener("submit",function(e){return e.preventDefault(),t.src({src:r.value,type:"application/x-mpegURL"}),!1})}(window,window.videojs); </script>
 <div class="overlay"><a href='http://www.khaledtv.tk/' target="_blank" style='display: block'>
 <h1>www.Khaledtv.tk</h1></a></div></body></html>
