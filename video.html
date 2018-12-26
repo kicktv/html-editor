@@ -1,3 +1,24 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8">
+<title> api  video </title><style type="text/css">
+html,body { height:100%; width:100%; padding:0px; margin:0px;}
+video {position:fixed; height:100%;width:100%; padding:0px; margin:0px;}
+</style></head><body>
+<video id="ap" src=""  type="video/mp4"  poster=""
+controls   preload="auto" width="100%" height="100%" >
+</video><script>
+var video=getUrlVars()["src"];
+var poster=getUrlVars()["poster"];
+var url=(video);
+document.getElementById("ap").src=url;
+var url=(poster);
+document.getElementById("ap").poster=url;
+function getUrlVars(){var vars={};
+var parts=window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi,function(m,key,value)
+{vars[key]=value});return vars}</script></body></html>
+
+<!-- http://www.html-editor.tk/video.html?src=https://v.sharefa.st/q8JUeymbSYY1.mp4&poster=http://www.jumptv.ml/img/chadatv.png -->
+
+
 <!-- <!DOCTYPE html><html><head><title>video full page</title>
 <style>html,body {background-color:red; height:100%;overflow: hidden;}* {margin: 0;padding: 0;}
 video {object-fit: fill; top: -9999px; bottom: -9999px; left: -9999px; right: -9999px; margin: auto;position:absolute;height:100%;width:100%;overflow: hidden;}
