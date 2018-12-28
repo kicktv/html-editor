@@ -19,12 +19,12 @@ body {background: url(img/bg-pattern.png)#0630c2; color: #818181; font-family: T
 input.btn {color:black; font: bold 75% 'tahoma',helvetica,sans-serif; background-color:#ffd148; border: 2px solid; border-color: #c7c5c8;}
 input.btn2 {color:black;  font: bold 95% 'tahoma',helvetica,sans-serif; background-color:#ffd148; border: 2px solid; border-color: #c7c5c8;}
 h1 {font-family:impact, arial,tahoma ; color:white; font:bold 95%}
-textarea {border: 2px solid; border-color: black;}
-input {font-size:16px; width:135px; height:42px; border: 1px solid; border-color: black;}
+.textinput {width: 95%; height:360px; outline: none;resize: none; border: 1px solid #000;}
+input {font-size:22px; width:95%; height:42px; border: 1px solid; border-color: black;}
 </style></head><body  text="black"><script language="JavaScript">
 function preview(){temp=document.tester.box.value,preWindow=open("","preWindow"," menubar=yes, scrollbars=yes"),preWindow.document.open(),preWindow.document.write(temp),preWindow.document.close()}</script>
 <center><h1>HTML And Script Code Tester</h1><form name="tester">
-<textarea  rows="22" cols="85" wrap="physical" name="box"></textarea><br>
+<textarea  class="textinput"   wrap="physical" name="box"></textarea><br>
 <input type="button" value="Test HTML Code" onClick="preview()">
 <input type="reset" value="Clear Text Box"></form>
 <!-- counter visitor -->
