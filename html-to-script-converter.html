@@ -1,0 +1,141 @@
+<!-- HTML to Script converter -->
+<!-- By M.Weidemann (http://www.2mstudio.de) -->
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<title>HTML to Script Converter</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<meta name="description" content="Free Download. HTML to Script Converter converts HTML easily to PHP, JavaScript or ASP. Works in Firefox, Mozilla and IE.">
+<meta name="keywords" content="free download, html to script converter, html, php, javascript, asp, 2M.Studio, Bocholt, Isselburg">
+<meta name="abstract" content="Free Download. HTML to Script Converter converts HTML easily to PHP, JavaScript or ASP. Works in Firefox, Mozilla and IE.">
+<meta name="copyright" content="(c)2004  2M.Studio Agentur für Komunikationsdienste http://www.2mstudio.de">
+<meta name="author" content="Michael Weidemann 2M.Studio Agentur für Komunikationsdienste http://www.2mstudio.de">
+<meta name="publisher" content="2M.Studio Agentur für Kommunikationsdienste">
+<meta name="DC.Title" content="HTML to Script Converter">
+<script type="text/javascript">
+
+
+function brCheck(data)
+{
+  var ns4 = document.layers;
+  var ns6 = document.getElementById && !document.all;
+  var ie4 = document.all;
+  
+  if(ns4) br = "%0A";
+  else if(ns6) br = "%0A";
+  else if(ie4) br = "%0D%0A";
+  else br = "%0D%0A";
+	 
+  data.value=data.value.replace(/"/gi,'\\"'); 
+  dataArr=escape(data.value).split(br);
+  data.value="";
+	 
+}
+
+function scriptPHP(data){
+brCheck(data);
+for (i=0; i<dataArr.length; i++){
+data.value+= (i==0) ? "<?php\necho " : "echo "
+data.value+= "\"" + unescape(dataArr[i]); 
+data.value+= (i!=dataArr.length-1) ? "\\n\"; \n" : "\\n\";\n"
+}
+data.value+="\?>"
+}
+
+function scriptJS(data){
+brCheck(data);
+for (i=0; i<dataArr.length; i++){
+data.value+= (i==0) ? "<script type=\"text/javascript\">\n<!-- \ndocument.writeln(\" " : "document.writeln(\" "
+data.value+= "" + unescape(dataArr[i])
+data.value+= (i!=dataArr.length-1) ? " \"); \n" : " \");\n" 
+}
+data.value+=" \// \-->\n<\/script>"
+}
+
+function scriptASP(data){
+brCheck(data);
+for (i=0; i<dataArr.length; i++){
+data.value+= (i==0) ? "#!/usr/bin/perl\nprint \"Content-type: text/html\\n\\n\";\n$code[0] = " : "$code["+i+"] = "
+data.value+= "\"" + unescape(dataArr[i])
+data.value+= (i!=dataArr.length-1) ? "\"; \n" : "\";\n" 
+}
+data.value+="for ($i=0;$i<scalar(@code);$i++) {print($code[$i].\"\\n\");}" 
+}
+
+function copyF(txx) {
+with(txx){
+focus(); select() 
+}
+if(document.all){
+txt=txx.createTextRange()
+txt.execCommand("Copy") 
+}}
+
+</script>
+<style type="text/css">
+<!--
+.input1 {
+	background-color: #F7F7F7;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #000000;
+	height: 350px;
+	width: 750px;
+	overflow: auto;
+}
+body {
+	background-color: #006699;
+	overflow: hidden;
+}
+.input2 {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #FFFFFF;
+	background-color: #005782;
+}
+.borders {
+	border: 1px outset #00406A;
+}
+a {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #FFFFFF;
+	text-decoration: none;
+}
+a:hover {
+	color: #FFFF99;
+}
+-->
+</style>
+</head>
+<body>
+<form name="doc" action="">
+<table width="300" border="0" align="center" cellpadding="3" cellspacing="0" class="borders">
+  <tr>
+    <td colspan="2" align="center"><input name="button" type="button" class="input2" onClick="scriptPHP(document.doc.tx)" value="HTML -> PHP">
+      <input name="button2" type="button" class="input2" onClick="scriptJS(document.doc.tx)" value="HTML -> JavaScript">
+      <input name="button2" type="button" class="input2" onClick="scriptASP(document.doc.tx)" value="HTML -> ASP">
+      <input name="reset" type="reset" class="input2" value="Reset" onClick="document.doc.tx.focus()">
+      <input name="button2" type="button" class="input2" onClick="copyF(document.doc.tx)" value="Select All">
+	  <input name="button2" type="button" class="input2" onClick="document.doc.tx.value='\n  Copyright (C) 2004 by 2M.Studio Michael Weidemann\n\n  You are free to distribute and modify this file, as long as you\n  do not remove this copyright notice and clearly label modified\n  versions as being modified.\n\n  This software has NO WARRANTY.  Use it at your own risk.\n  Original location: http://www.2mstudio.de'" value="Info"></td>
+    </tr>
+  <tr>
+    <td colspan="2"> <textarea name="tx" cols="110" class="input1" rows="2"></textarea></td>
+    </tr>
+  <tr>
+    <td width="395"><a href="http://www.2mstudio.de" target="_blank">&copy; 2004 by 2M.Studio M.Weidemann</a></td>
+    <td width="349" align="right"><a href="http://www.2mstudio.de/download.html" title="Download">download here</a> &nbsp;&nbsp;</td>
+  </tr>
+  <tr>
+    <td colspan="2" align="center"><a href="http://www.2mstudio.de/download.html">HTML to Script Converter converts HTML easily to PHP, JavaScript or ASP. Works in Firefox, Mozilla and IE.</a></td>
+    </tr>
+</table>
+</form>
+<script src="http://www.google-analytics.com/urchin.js" type="text/javascript">
+</script>
+<script type="text/javascript">
+_uacct = "UA-474691-1";
+urchinTracker();
+</script>
+</body>
+</html>
