@@ -14,7 +14,7 @@ function(m,key,value)
 var api="https://www.saveoffline.com/process/?url=";
 var url=(api) + getUrlVars()["src"] + "&type=json";
 $.getJSON(url,
-function( json ) {var video=(json.urls[1].id);
+function( json ) {var video=(json.urls[0].id);
 var img=(json.thumbnail);
 jwplayer("my-video").setup({file:video,type:"video/mp4",image:img,
 title: 'www.khaledtv.tk',autostart: "false",width: "100%",height: "100%",
