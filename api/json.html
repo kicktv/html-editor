@@ -13,12 +13,12 @@ function(m,key,value)
 {vars[key]=value});return vars}
 var url=getUrlVars()["src"];
 $.getJSON(url,
-function( json ) {var video=(json.urls[1].id);
+function( json ) {var video=(json.urls[0].id);
 var img=(json.thumbnail);
 jwplayer("my-video").setup({file:video,type:"video/mp4",image:img,
 title: 'www.khaledtv.tk',autostart: "false",width: "100%",height: "100%",
 stretching: "exactfit",androidhls:!0,primary:"flash"}); });
 </script></body></html>
 <!-- 
-http://www.html-editor.tk/api/json.html?src=http://www.html-editor.tk/api/video.json
+http://www.html-editor.tk/api/json.html?src=http://www.html-editor.tk/video.json
 -->
