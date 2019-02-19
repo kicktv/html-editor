@@ -11,7 +11,7 @@ function getUrlVars(){var vars={};
 var parts=window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi,
 function(m,key,value)
 {vars[key]=value});return vars}
-var url=getUrlVars()["src"] + "&type=json";
+var url=getUrlVars()["src"];
 $.getJSON(url,
 function( json ) {var video=(json.urls[1].id);
 var img=(json.thumbnail);
