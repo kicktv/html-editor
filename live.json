@@ -1,0 +1,10 @@
+{ "urls": [
+{"2m":"http://cdnamd-hls-globecast.akamaized.net/live/ramdisk/2m_monde/hls_video_ts/index.m3u8"},
+{"snrt":"http://cdn-hls.globecast.tv/live/ramdisk/al_aoula_inter/hls_snrt/al_aoula_inter.m3u8"},
+{"tamazight":"http://cdnamd-hls-globecast.akamaized.net/live/ramdisk/tamazight_tv8_snrt/hls_snrt/tamazight_tv8_snrt.m3u8"},
+{"arriadia":"http://cdnamd-hls-globecast.akamaized.net/live/ramdisk/arriadia/hls_snrt/index.m3u8"},
+{"arrabiaa":"http://cdn-hls.globecast.tv/live/ramdisk/arrabiaa/hls_snrt/index.m3u8"},
+{"natgeo":"http://adtv.ercdn.net/adnatgeo/adnatgeo.m3u8"},
+{"aljazeera-doc":"http://aljazeera-doc-apple-live.adaptive.level3.net/apple/aljazeera/hq-doc/800kStream.m3u8"},
+{"ktvarabe":"https://svs.itworkscdn.net/ktvarabelive/karabe.smil/playlist.m3u8"}
+ ]}
