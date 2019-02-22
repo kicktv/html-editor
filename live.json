@@ -1,0 +1,6 @@
+{ "urls": [
+{"name":"2m","url":"http://cdnamd-hls-globecast.akamaized.net/live/ramdisk/2m_monde/hls_video_ts/index.m3u8"},
+{"name":"snrt","url":"http://cdn-hls.globecast.tv/live/ramdisk/al_aoula_inter/hls_snrt/al_aoula_inter.m3u8"},
+{"name":"tamazight","url":"http://cdnamd-hls-globecast.akamaized.net/live/ramdisk/tamazight_tv8_snrt/hls_snrt/tamazight_tv8_snrt.m3u8"},
+{"name":"ktvarabe","url":"https://svs.itworkscdn.net/ktvarabelive/karabe.smil/playlist.m3u8"}
+ ]}
