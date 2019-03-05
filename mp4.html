@@ -1,19 +1,23 @@
-<!DOCTYPE html><html><head><meta charset="utf-8"><title> Test Video </title>
-<style  type="text/css">html,body {height:100%; width:100%; padding:0px; margin:0px;}
-.title {padding:0px; margin:0px; background-color: #02C54C; color: #ffffff; width: 100%; height: 60px; line-height:60px;}
-@media only screen and (max-width: 300px) {.title{font-size: 26px;}}
-.bat {text-align: center; width:800px; height:41px;  border: 1px solid #02C54C; z-index:1;}
-@media only screen and (max-width: 800px) {.bat{width:98%;}}
+<!DOCTYPE html><html><head><meta charset="utf-8"><title> Test Video </title><style  type="text/css">
+html,body {height:100%; width:100%; padding:0px; margin:0px;}
+.title {padding:0px; margin:0px; background-color: #02C54C; color: #ffffff; width: 100%; height:80px; line-height:80px;}
+@media only screen and (max-width:400px) {.title{font-size:20px;}}
+.footer {padding:0px; margin:0px; background-color: #02C54C; color: #ffffff; width: 100%; height:50px; line-height:50px;}
+@media only screen and (max-width:400px) {.footer{font-size:20px;}}
+.bat {text-align: center; width:700px; height:41px;  border: 1px solid #02C54C; z-index:1;}
+@media only screen and (max-width:1000px) {.bat{width:90%;}}
 .btn-success {color: #fff;background-color:#02C54C;border-color:#02C54C;
 z-index: 2;margin-left: -65px;width: 60px;height: 43px;}
-video {width:800px; height:460px;  border: 1px solid #000; z-index:1;}
-@media only screen and (max-width: 800px) {video{width:98%;height:auto;}}
-</style></head><body><center><h1 class="title"> Test Video Free Online </h1>
-<h1>Past url video </h1>
-<input class="bat" type="url" id="source" value="https://www.dropbox.com/s/8bgpwiqybdoe1my/gol-betis.mp4?dl=1">
+video {object-fit:fill; width:800px; height:460px;  border: 1px solid #000; z-index:1;}
+@media only screen and (max-width:1000px) {video{width:98%;height:auto;}}
+</style></head><body><center><h1 class="title"> Test Video Free Online </h1><br>
+<input class="bat" type="url" id="source" value="http://www.html-editor.tk/nature.mp4">
 <button type="submit" class="btn btn-success" onclick="javascript:loadVideo()">Play</button>
-<br><br><video   id="vid3"  width="800"  height="460"  controls poster="" src=""></video><br><br>
-<h1 class="title"> Test Video Free Online </h1>
+<br><br><video   id="vid3"  width="704"  height="440"  autoplay controls 
+poster="" src="https://dl.dropboxusercontent.com/s/8bgpwiqybdoe1my/gol-betis.mp4"></video><br>
+<h1>Test Stream Video </h1>
+<h4 class="footer"><span>powered by : <a href='http://www.html-editor.tk/'>
+<span>khaled star </span></a> | Copyright © 2018 All Right Reserved</span></h4>
 <script type="text/javascript">function loadVideo() {
 var vid = document.getElementById('vid3');
 vid.src = document.getElementById('source').value;
