@@ -1,0 +1,10 @@
+#EXTM3U
+#EXT-X-VERSION:3
+#EXT-X-STREAM-INF:BANDWIDTH=120000,RESOLUTION=200x160
+http://dmiffthvll.cdn.mangomolo.com/dubaizaman/smil:dubaizaman.smil/chunklist_b120000.m3u8
+#EXT-X-STREAM-INF:BANDWIDTH=360000,RESOLUTION=350x280
+http://dmiffthvll.cdn.mangomolo.com/dubaizaman/smil:dubaizaman.smil/chunklist_b360000.m3u8
+#EXT-X-STREAM-INF:BANDWIDTH=725000,RESOLUTION=500x400
+http://dmiffthvll.cdn.mangomolo.com/dubaizaman/smil:dubaizaman.smil/chunklist_b725000.m3u8
+#EXT-X-STREAM-INF:BANDWIDTH=1500000,RESOLUTION=720x576
+http://dmiffthvll.cdn.mangomolo.com/dubaizaman/smil:dubaizaman.smil/chunklist_b1500000.m3u8
