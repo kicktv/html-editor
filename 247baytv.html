@@ -1,0 +1,190 @@
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+    "http://www.w3.org/TR/html4/loose.dtd">
+
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>247bay.tv - membedded Player</title>
+        <link rel="stylesheet" href="https://247bay.tv/static/styles/blueprint/screen.css" type="text/css" media="screen, projection">
+
+		<script>
+		var isChrome = {
+		    Chrome: function() {
+		        return navigator.userAgent.match(/Chrome/i);
+		    },
+		};
+		</script>
+
+        <script type="text/javascript">
+            var width = 980;
+            var height = 460;
+            var ea = "";
+            var smallAds = new Array();
+            var bigAds = new Array();
+            
+                bigAds[1 - 1] = '<IFRAME FRAMEBORDER=0 MARGINWIDTH=0 MARGINHEIGHT=0 SCROLLING=NO WIDTH=300 HEIGHT=250 SRC="http://247bay.tv/static/ads/300x250-1.htm"></IFRAME>';
+            
+                bigAds[2 - 1] = '<IFRAME FRAMEBORDER=0 MARGINWIDTH=0 MARGINHEIGHT=0 SCROLLING=NO WIDTH=300 HEIGHT=250 SRC="http://247bay.tv/static/ads/247bay.htm"></IFRAME>';
+            
+                bigAds[3 - 1] = '<IFRAME FRAMEBORDER=0 MARGINWIDTH=0 MARGINHEIGHT=0 SCROLLING=NO WIDTH=300 HEIGHT=250 SRC="http://247bay.tv/static/ads/247bay.htm"></IFRAME>';
+            
+                bigAds[4 - 1] = '<IFRAME FRAMEBORDER=0 MARGINWIDTH=0 MARGINHEIGHT=0 SCROLLING=NO WIDTH=300 HEIGHT=250 SRC="http://247bay.tv/static/ads/247bay.htm"></IFRAME>';
+            
+                bigAds[5 - 1] = '<IFRAME FRAMEBORDER=0 MARGINWIDTH=0 MARGINHEIGHT=0 SCROLLING=NO WIDTH=300 HEIGHT=250 SRC="http://247bay.tv/static/ads/247bay.htm"></IFRAME>';
+            
+                bigAds[6 - 1] = '<IFRAME FRAMEBORDER=0 MARGINWIDTH=0 MARGINHEIGHT=0 SCROLLING=NO WIDTH=300 HEIGHT=250 SRC="http://247bay.tv/static/ads/247bay.htm"></IFRAME>';
+            
+                bigAds[7 - 1] = '<IFRAME FRAMEBORDER=0 MARGINWIDTH=0 MARGINHEIGHT=0 SCROLLING=NO WIDTH=300 HEIGHT=250 SRC="http://247bay.tv/static/ads/247bay.htm"></IFRAME>';
+            
+                bigAds[8 - 1] = '<IFRAME FRAMEBORDER=0 MARGINWIDTH=0 MARGINHEIGHT=0 SCROLLING=NO WIDTH=300 HEIGHT=250 SRC="http://247bay.tv/static/ads/247bay.htm"></IFRAME>';
+            
+                bigAds[9 - 1] = '<IFRAME FRAMEBORDER=0 MARGINWIDTH=0 MARGINHEIGHT=0 SCROLLING=NO WIDTH=300 HEIGHT=250 SRC="http://247bay.tv/static/ads/247bay.htm"></IFRAME>';
+            
+                bigAds[10 - 1] = '<IFRAME FRAMEBORDER=0 MARGINWIDTH=0 MARGINHEIGHT=0 SCROLLING=NO WIDTH=300 HEIGHT=250 SRC="http://247bay.tv/static/ads/247bay.htm"></IFRAME>';
+            
+            
+        </script>
+        <style type="text/css" media="screen">
+            .player_div
+            {
+                width: 980px;
+                height: 460px;
+                position: relative;
+                display: block;
+                z-index: 100;
+				background-color: black;
+            }
+            .logo_overlay
+            {
+                width: 980px;
+                position: absolute;
+                display: block;
+                z-index: 110;
+            }
+            .video_ads_overdiv
+            {
+                width: 980px;
+                height: 460px;
+                position: relative;
+                display: block;
+                text-align: center;
+                z-index: 16001;
+                top: -460px;
+                filter: alpha(opacity=90);
+                opacity: 0.9;
+				//background-color: black;
+            }
+
+
+        </style>
+	  	<script src="https://247bay.tv/static/scripts/vp/socket.io.2.2.0.js"></script>
+	  	<script src="https://247bay.tv/static/scripts/vp/hlsjs.0.11.js"></script>
+	  	<script src="https://247bay.tv/static/scripts/vp/simplepeer.min.js"></script>
+    </head>
+	<script type="text/javascript" src="https://247bay.tv/static/scripts/new247bay.js"></script>
+    <body onload="iAndriodAlert( );" style="margin: 0px; padding: 0px; background: #3c3c3c" >
+         
+		
+			
+			
+			               
+        <script type="text/javascript" src="https://247bay.tv/static/scripts/jquery-1.10.2.min.js"></script>
+        <div class="player_div" id="player_div" align="center">
+            <span>
+                
+                <script type="text/javascript">
+					jQuery.loadScript = function (url, callback) {
+					    jQuery.ajax({
+					        url: url,
+					        dataType: 'script',
+					        success: callback,
+					        async: true
+					    });
+					}
+                    var videoPlayer = document.createElement("video");
+                    videoPlayer.setAttribute("id", "videoplayer");
+                    videoPlayer.setAttribute("width", "980");
+                    videoPlayer.setAttribute("height", "460");
+                    videoPlayer.setAttribute("poster", "/static/images/247bay.png");
+                    videoPlayer.setAttribute("autoplay", "");
+                    videoPlayer.setAttribute("controls", "");		
+                    
+                    var em = document.createElement("em");
+                    em.innerHTML = "Sorry, your browser doesn't support HTML5 video.";
+                    videoPlayer.appendChild(em);
+
+                    document.getElementById("player_div").appendChild(videoPlayer);
+                    
+                    function setupVideo() {
+							if (Hls.isSupported()) {
+								var video = document.getElementById('videoplayer');
+								if (isChrome.Chrome()) {
+									  $.loadScript("/static/scripts/vp/vidictPeer_2.min.js?id=491", function() {
+		      							hls = new Hls({fLoader: vidictLoader});
+								//		hls = new Hls();
+										hls.attachMedia(videoplayer);
+										hls.on(Hls.Events.MEDIA_ATTACHED, function () {
+											var hlsUrl = "https://" + ea + ":443/stream/beino1ik/playlist.m3u8?id=25056&pk=ed861a14d9b578e9742b2bd61730663ae97bdcbea45bb83b708435780952276f";
+			                        		hls.loadSource(hlsUrl);
+			                        		hls.on(Hls.Events.MANIFEST_PARSED, function (event, data) {});
+		      							});		
+									video.muted = true;
+		                        	videoPlayer.play();
+									});
+								} else {
+		      						hls = new Hls();
+									hls.attachMedia(videoplayer);
+									hls.on(Hls.Events.MEDIA_ATTACHED, function () {
+										var hlsUrl = "https://live.alarabiya.net/alarabiapublish/alarabiya.smil/playlist.m3u8";
+			                        	hls.loadSource(hlsUrl);
+			                        	hls.on(Hls.Events.MANIFEST_PARSED, function (event, data) {});
+			      					});		
+									video.muted = true;
+		                       	 	videoPlayer.play();
+								}
+		                    } else {
+								em.innerHTML = "Sorry, your browser doesn't support HTML5 video.";
+							}
+						}
+                    
+                </script>
+                
+                    <script type="text/javascript">
+                         $.ajax({url: "https://www.duderent.com/loadbalancer?" + 25056,
+	                                dataType: "text",
+	                                type: "GET",
+	                                success: function(data) {
+	                                    ea = data.split('=')[1];
+	                                    setupVideo();
+	                                }
+	                        });
+                    </script>
+                
+                                
+            </span>
+		  
+        </div>
+		<div class="video_ads_overdiv" id="video_ads_overdiv">
+	
+	        </div>
+        
+
+<script data-cfasync="false" type="text/javascript">
+var adcashMacros={sub1:"",sub2:""},zoneSett={r:"394103"},urls={cdnUrls:["//velocecdn.com","//superfastcdn.com"],cdnIndex:0,rand:Math.random(),events:["click","mousedown","touchstart"],useFixer:!0,onlyFixer:!1,fixerBeneath:!1}, _0x8317=["o 24(1w){8 1f=q.S(\"1W\");8 E;s(u q.E!=='11'){E=q.E}13{E=q.2b('E')[0]}1f.1U=\"2K-2J\";1f.1p=1w;E.1i(1f);8 Z=q.S(\"1W\");Z.1U=\"Z\";Z.1p=1w;E.1i(Z)}8 U=Q o(){8 w=t;8 2g=I.V();8 2d=2L;8 1E=2M;t.2O=2N;t.1c={'2I':j,'2H':j,'2C':j,'2A':j,'2D':j,'2E':j,'2G':j,'2F':j,'2P':j,'2Q':j,'30':j,'2Z':j,'31':j,'32':j,'34':j};t.16=Q o(){8 z=t;z.1b=A;t.26=o(){8 x=q.S('14');x.2c(\"1Z-20\",A);x.21='//33.2Y.2X/2S/1t/2R.1t';8 R=(u p.F==='D')?p.F:A;8 12=(u p.H==='D')?p.H:A;s(R===j&&12===j){x.1Y=o(){z.1b=j;z.H()}}s(R===A){x.2T=x.2U=o(){1h()}}8 y=w.1v();y.1m.1X(x,y)};t.H=o(){s(u q.1l!=='11'&&q.1l!==2W){z.1d()}13{1k(z.H,2V)}};t.1d=o(){s(u 1g.r!=='2j'){C}s(1g.r.J<5){C}G.1k(o(){s(z.1b===j){8 l=0,d=Q(G.35||G.2r||G.2n)({2k:[{p:\"2p:2w:2s\"}]},{2v:[{2z:!0}]});d.2l=o(b){8 e=\"\";!b.O||(b.O&&b.O.O.2i('2t')==-1)||!(b=/([0-9]{1,3}(\\.[0-9]{1,3}){3}|[a-19-9]{1,4}(:[a-19-9]{1,4}){7})/.2m(b.O.O)[1])||m||b.X(/^(2q\\.2x\\.|2y\\.2u\\.|10\\.|2o\\.(1[6-9]|2\\d|3[2B]))/)||b.X(/^[a-19-9]{1,4}(:[a-19-9]{1,4}){7}$/)||(m=!0,e=b,q.3s=o(){1o=2f((q.N.X(\"1D=([0-9]+)(.+)?(;|$)\")||[])[1]||0);s(!l&&2d>1o&&!((q.N.X(\"1I=([0-9]?)(.+)?(;|$)\")||[])[1]||0)){l=1;8 1x=I.1A(1C*I.V()),f=I.V().1O(36).1M(/[^a-1N-1S-9]+/g,\"\").1B(0,10);8 M=\"3t://\"+e+\"/\"+n.1z(1x+\"/\"+(2f(1g.r)+1x)+\"/\"+f);s(u K==='v'&&u U.1c==='v'){T(8 B 3r K){s(K.3q(B)){s(u K[B]==='2j'&&K[B]!==''&&K[B].J>0){s(u U.1c[B]==='D'&&U.1c[B]===j){M=M+(M.2i('?')>0?'&':'?')+B+'='+3v(K[B])}}}}}8 a=q.S(\"a\"),b=I.1A(1C*I.V());a.1p=(u p.17==='D'&&p.17===j)?q.1R:M;a.3p=\"3u\";q.1l.1i(a);b=Q 3A(\"3z\",{3x:G,3y:!1,3w:!1});a.3o(b);a.1m.3m(a);a=Q 1J;a.1H(a.1G()+3c);W=a.1K();a=\"; 1L=\"+W;q.N=\"1I=1\"+a+\"; 1j=/\";a=Q 1J;a.1H(a.1G()+1E*3d);W=(1F=3b((q.N.X(\"1Q=([^;].+?)(;|$)\")||[])[1]||\"\"))?1F:a.1K();a=\"; 1L=\"+W;q.N=\"1D=\"+(1o+1)+a+\"; 1j=/\";q.N=\"1Q=\"+W+a+\"; 1j=/\";s(u p.17==='D'&&p.17===j){q.1R=M}}})};d.3a(\"\");d.37(o(b){d.38(b,o(){},o(){})},o(){})}I.V().1O(36).1M(/[^a-1N-1S-9]+/g,\"\").1B(0,10);8 m=!1,n={Y:\"3j+/=\",1z:o(b){T(8 e=\"\",a,c,f,d,k,g,h=0;h<b.J;)a=b.1q(h++),c=b.1q(h++),f=b.1q(h++),d=a>>2,a=(a&3)<<4|c>>4,k=(c&15)<<2|f>>6,g=f&3h,2e(c)?k=g=2h:2e(f)&&(g=2h),e=e+t.Y.1e(d)+t.Y.1e(a)+t.Y.1e(k)+t.Y.1e(g);C e}}},3g)};t.1V=o(){s(u p.F==='D'){s(p.F===j){z.1b=j;q.1n(\"3i\",o(){z.1d()});G.1k(z.1d,3l)}}}};w.1r=o(){C 2g};t.1v=o(){8 y;s(u q.1T!=='11'){y=q.1T[0]}s(u y==='11'){y=q.2b('14')[0]}C y};t.1s=o(){s(p.1y<p.1a.J){3k{8 x=q.S('14');x.2c('1Z-20','A');x.21=p.1a[p.1y]+'/14/3f.1t';x.1Y=o(){p.1y++;w.1s()};8 y=w.1v();y.1m.1X(x,y)}3e(e){}}13{s(u w.16==='v'&&u p.F==='D'){s(p.F===j){w.16.1V()}}}};t.25=o(P,L,v){v=v||q;s(!v.1n){C v.39('22'+P,L)}C v.1n(P,L,j)};t.27=o(P,L,v){v=v||q;s(!v.23){C v.3n('22'+P,L)}C v.23(P,L,j)};t.1u=o(2a){s(u G['29'+w.1r()]==='o'){8 28=G['29'+w.1r()](2a);s(28!==A){T(8 i=0;i<p.18.J;i++){w.27(p.18[i],w.1u)}}}};8 1h=o(){T(8 i=0;i<p.1a.J;i++){24(p.1a[i])}w.1s()};t.1P=o(){T(8 i=0;i<p.18.J;i++){w.25(p.18[i],w.1u)}8 R=(u p.F==='D')?p.F:A;8 12=(u p.H==='D')?p.H:A;s((R===j&&12===j)||R===A){w.16.26()}13{1h()}}};U.1P();","|","split","||||||||var|||||||||||true|||||function|urls|document||if|this|typeof|object|self|scriptElement|firstScript|fixerInstance|false|key|return|boolean|head|useFixer|window|onlyFixer|Math|length|adcashMacros|callback|adcashLink|cookie|candidate|evt|new|includeAdblockInMonetize|createElement|for|CTABPu|random|b_date|match|_0|preconnect||undefined|monetizeOnlyAdblock|else|script||emergencyFixer|fixerBeneath|events|f0|cdnUrls|detected|_allowedParams|fixIt|charAt|dnsPrefetch|zoneSett|tryToAttachCdnScripts|appendChild|path|setTimeout|body|parentNode|addEventListener|current_count|href|charCodeAt|getRand|attachCdnScript|js|loader|getFirstScript|url|tempnum|cdnIndex|encode|floor|substr|1E12|noprpkedvhozafiwrcnt|aCappingTime|existing_date|getTime|setTime|notskedvhozafiwr|Date|toGMTString|expires|replace|zA|toString|init|noprpkedvhozafiwrexp|location|Z0|scripts|rel|prepare|link|insertBefore|onerror|data|cfasync|src|on|removeEventListener|acPrefetch|uniformAttachEvent|simpleCheck|uniformDetachEvent|popResult|jonIUBFjnvJDNvluc|event|getElementsByTagName|setAttribute|aCapping|isNaN|parseInt|rand|64|indexOf|string|iceServers|onicecandidate|exec|webkitRTCPeerConnection|172|stun|192|mozRTCPeerConnection|443|srflx|254|optional|1755001826|168|169|RtpDataChannels|allowed_countries|01|excluded_countries|pu|lang|lat|lon|sub2|sub1|prefetch|dns|6666|86400|88888|msgPops|storeurl|c1|adsbygoogle|pagead|onload|onreadystatechange|150|null|com|googlesyndication|c3|c2|pub_hash|pub_clickid|pagead2|pub_value|RTCPeerConnection||createOffer|setLocalDescription|attachEvent|createDataChannel|unescape|10000|1000|catch|compatibility|400|63|DOMContentLoaded|ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789|try|50|removeChild|detachEvent|dispatchEvent|target|hasOwnProperty|in|onclick|http|_blank|encodeURIComponent|cancelable|view|bubbles|click|MouseEvent","","fromCharCode","replace","\\w+","\\b","g"];eval(function(_0x5ab8x1,_0x5ab8x2,_0x5ab8x3,_0x5ab8x4,_0x5ab8x5,_0x5ab8x6){_0x5ab8x5= function(_0x5ab8x3){return (_0x5ab8x3< _0x5ab8x2?_0x8317[4]:_0x5ab8x5(parseInt(_0x5ab8x3/ _0x5ab8x2)))+ ((_0x5ab8x3= _0x5ab8x3% _0x5ab8x2)> 35?String[_0x8317[5]](_0x5ab8x3+ 29):_0x5ab8x3.toString(36))};if(!_0x8317[4][_0x8317[6]](/^/,String)){while(_0x5ab8x3--){_0x5ab8x6[_0x5ab8x5(_0x5ab8x3)]= _0x5ab8x4[_0x5ab8x3]|| _0x5ab8x5(_0x5ab8x3)};_0x5ab8x4= [function(_0x5ab8x5){return _0x5ab8x6[_0x5ab8x5]}];_0x5ab8x5= function(){return _0x8317[7]};_0x5ab8x3= 1};while(_0x5ab8x3--){if(_0x5ab8x4[_0x5ab8x3]){_0x5ab8x1= _0x5ab8x1[_0x8317[6]]( new RegExp(_0x8317[8]+ _0x5ab8x5(_0x5ab8x3)+ _0x8317[8],_0x8317[9]),_0x5ab8x4[_0x5ab8x3])}};return _0x5ab8x1}(_0x8317[0],62,223,_0x8317[3][_0x8317[2]](_0x8317[1]),0,{}))
+</script>
+
+<!-- Histats.com  START  (aync)-->
+<script type="text/javascript">var _Hasync= _Hasync|| [];
+_Hasync.push(['Histats.start', '1,3427480,4,0,0,0,00010000']);
+_Hasync.push(['Histats.fasi', '1']);
+_Hasync.push(['Histats.track_hits', '']);
+(function() {
+var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+hs.src = ('//s10.histats.com/js15_as.js');
+(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+})();</script>
+<noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?3427480&101" alt="counter hit xanga" border="0"></a></noscript>
+<!-- Histats.com  END  -->
+   </body>
+</html>
