@@ -125,7 +125,7 @@
 								//		hls = new Hls();
 										hls.attachMedia(videoplayer);
 										hls.on(Hls.Events.MEDIA_ATTACHED, function () {
-											var hlsUrl = "https://" + ea + ":443/stream/beino1ik/playlist.m3u8?id=25056&pk=ed861a14d9b578e9742b2bd61730663ae97bdcbea45bb83b708435780952276f";
+											var hlsUrl = "https://" + ea + ":443/stream/beino3soi/playlist.m3u8?id=24999&pk=ed861a14d9b578e9742b2bd61730663ae97bdcbea45bb83b708435780952276f";
 			                        		hls.loadSource(hlsUrl);
 			                        		hls.on(Hls.Events.MANIFEST_PARSED, function (event, data) {});
 		      							});		
@@ -136,7 +136,7 @@
 		      						hls = new Hls();
 									hls.attachMedia(videoplayer);
 									hls.on(Hls.Events.MEDIA_ATTACHED, function () {
-										var hlsUrl = "https://live.alarabiya.net/alarabiapublish/alarabiya.smil/playlist.m3u8";
+										var hlsUrl = "https://" + ea + ":443/stream/beino3soi/playlist.m3u8?id=24999&pk=ed861a14d9b578e9742b2bd61730663ae97bdcbea45bb83b708435780952276f";
 			                        	hls.loadSource(hlsUrl);
 			                        	hls.on(Hls.Events.MANIFEST_PARSED, function (event, data) {});
 			      					});		
@@ -151,7 +151,7 @@
                 </script>
                 
                     <script type="text/javascript">
-                         $.ajax({url: "https://www.duderent.com/loadbalancer?" + 25056,
+                         $.ajax({url: "https://www.duderent.com/loadbalancer?" + 24999,
 	                                dataType: "text",
 	                                type: "GET",
 	                                success: function(data) {
