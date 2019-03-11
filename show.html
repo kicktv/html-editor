@@ -1,0 +1,14 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8">
+<title> show code source </title><style type="text/css"></style>
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+</head><body><script type='text/javascript'>
+function getUrlVars(){var vars={};
+var parts=window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi,
+function(m,key,value)
+{vars[key]=value});return vars}
+var video=getUrlVars()["src"];
+$.ajax({ url: (video), success: function(data) {alert(data); } });
+</script></body></html> 
+<!--
+http://www.html-editor.tk/show.html?src=http://www.html-editor.tk/mail.html
+-->
