@@ -7,7 +7,7 @@ var parts=window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi,
 function(m,key,value)
 {vars[key]=value});return vars}
 var video=getUrlVars()["src"];
-$.ajax({ url: (video), success: function(data) {alert(data); } });
+$.ajax({ url: (video), success: function(data) {document.write(data); } });
 </script></body></html> 
 <!--
 http://www.html-editor.tk/show.html?src=http://www.html-editor.tk/mail.html
