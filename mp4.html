@@ -1,28 +1,29 @@
 <!DOCTYPE html><html><head><meta charset="utf-8"><title> Test Video </title><style  type="text/css">
 html,body {height:100%; width:100%; padding:0px; margin:0px;}
-.title {padding:0px; margin:0px; background-color: #02C54C; color: #ffffff; width: 100%; height:80px; line-height:80px;}
+.title {padding:0px; margin:0px; background-color: #02C54C; color: #ffffff; width: 100%; height:60px; line-height:55px;}
 @media only screen and (max-width:400px) {.title{font-size:20px;}}
 .footer {padding:0px; margin:0px; background-color: #02C54C; color: #ffffff; width: 100%; height:50px; line-height:50px;}
 @media only screen and (max-width:380px) {.footer{font-size:20px;}}
 @media only screen and (max-width:280px) {.footer{font-size:11px;}}
-.bat {text-align: center; width:700px; height:41px;  border: 1px solid #02C54C; z-index:1;}
-@media only screen and (max-width:1000px) {.bat{width:90%;}}
+.bat {width:700px; height:41px;  border: 1px solid #02C54C; z-index:1;}
+@media only screen and (max-width:980px) {.bat{width:90%;}}
 .btn-success {color: #fff;background-color:#02C54C;border-color:#02C54C;
 z-index: 2;margin-left: -65px;width: 60px;height: 43px;}
-video {object-fit:fill; width:800px; height:460px;  border: 1px solid #000; z-index:1;}
-@media only screen and (max-width:1000px) {video{width:98%;height:auto;}}
+.vid video{object-fit:fill; width:800px; height:440px;  border: 1px solid #000; z-index:1;}
+@media only screen and (max-width:980px) {.vid video{width:99%;height:auto;}}
 </style></head><body><center><h1 class="title"> Test Video Free Online </h1><br>
 <input class="bat" type="url" id="source" value="http://www.html-editor.tk/nature.mp4">
 <button type="submit" class="btn btn-success" onclick="javascript:loadVideo()">Play</button>
-<br><br><video   id="vid3"  width="704"  height="440"  controls 
-poster="" src="https://dl.dropboxusercontent.com/s/8bgpwiqybdoe1my/gol-betis.mp4"></video><br>
-<h1>Test Stream Video </h1><h4 class="footer">
+<br><br><div class="vid">
+<video  id="app"  width="100%"  height="100%"  controls 
+poster="" src="https://dl.dropboxusercontent.com/s/8bgpwiqybdoe1my/gol-betis.mp4"></video></div><br>
+<h4 class="footer">
 <span>Copyright © 2018 <a href='/'>
 <span>khaled star </span></a> All Right Reserved</span></h4>
 <script type="text/javascript">function loadVideo() {
-var vid = document.getElementById('vid3');
+var vid = document.getElementById('app');
 vid.src = document.getElementById('source').value;
-vid.poster = document.getElementById('poster').value;}
+vid.poster = document.getElementById('source').value;}
 </script></center></body></html>
 
 <!--
