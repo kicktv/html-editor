@@ -1,0 +1,8 @@
+#EXTM3U
+#EXT-X-VERSION:3
+#EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=562224,CODECS="avc1.66.30,mp4a.40.2",RESOLUTION=384x216
+http://cdnamd-hls-globecast.akamaized.net/live/ramdisk/al_aoula_inter/hls_snrt/al_aoula_inter-video=400000-audio_AACL_qad_130400_110=130400.m3u8
+#EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=1198224,CODECS="avc1.66.31,mp4a.40.2",RESOLUTION=640x360
+http://cdnamd-hls-globecast.akamaized.net/live/ramdisk/al_aoula_inter/hls_snrt/al_aoula_inter-video=1000000-audio_AACL_qad_130400_110=130400.m3u8
+#EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=1728224,CODECS="avc1.77.31,mp4a.40.2",RESOLUTION=640x360
+http://cdnamd-hls-globecast.akamaized.net/live/ramdisk/al_aoula_inter/hls_snrt/al_aoula_inter-video=1500000-audio_AACL_qad_130400_110=130400.m3u8
