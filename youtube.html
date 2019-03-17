@@ -1,14 +1,10 @@
 <!DOCTYPE html><html lang="en"><head><meta charset="utf-8">
 <title>embed video youtube</title><style type="text/css">
-html,body { height:100%; width:100%; padding:0px; margin:0px;}
-video {position:fixed; height:100%;width:100%; padding:0px; margin:0px;}</style>
-<script type="text/javascript">
-if (top != self)
-if (location)
+html,body {height:100%; width:100%; padding:0px; margin:0px;}
+video {object-fit: fill; position:fixed; height:100%;width:100%; padding:0px; margin:0px;}</style>
+<script type="text/javascript"> if (top != self) if (location)
 top.location.replace(self.location.href);
-else
-top.document.location.replace(self.document.location.href);
-</script> 
+else top.document.location.replace(self.document.location.href);</script> 
 </head><body><video id="app" src=""  type="video/mp4"  poster=""
 controls   preload="auto" width="100%" height="100%"></video>
 <script>  function getUrlVars(){var vars={};
