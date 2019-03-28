@@ -20,7 +20,7 @@ span a {text-decoration: none; color: red;}
 <input class="bat" type="url" id="source" value="http://adtv.ercdn.net/adsport1/adsport1_720p.m3u8">
 <button type="submit" class="btn btn-success" onclick="javascript:loadVideo()">Stream</button><br><br>
 <div class='fram'><div class='embed-video'>
-<iframe  id="ap" src="js.html?src=" allowtransparency="true" frameborder="0"></iframe></div></div>
+<iframe  id="ap" src="js.html?src=http://adtv.ercdn.net/adsport2/adsport2_720p.m3u8" allowtransparency="true" frameborder="0"></iframe></div></div>
 <script type="text/javascript">
 function loadVideo() {var file = document.getElementById('ap');
 file.src = "js.html?src=" + document.getElementById('source').value;}
