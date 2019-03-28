@@ -10,7 +10,7 @@ function gup(e){e=e.replace(/[\[]/,"\\[").replace(/[\]]/,"\\]");
 var n="[\\?&]"+e+"=([^&#]*)",
 l=new RegExp(n),
 c=l.exec(window.location.href);
-return null==c?"http://www.html-editor.tk/nature.mp4":unescape(c[1])}
+return null==c?"/nature.mp4":unescape(c[1])}
 var video=gup("src");
 var iptv=(video);
 jwplayer("app").setup({file:iptv,
@@ -19,7 +19,4 @@ tag:"khaledtv",title:"khaledtv",autostart:"true",stretching:"exactfit",autostret
 logo:{position:"top-left",margin:"0",file:"",height:"50",link:"http://www.html-editor.tk/"},
 flashplayer:"jwplayer.flash.swf",tracks:{file:"thumbnails.vtt",kind:"thumbnails"} });
 </script></body></html>
-
-<!-- file:///C:/Users/Karima/Pictures/1khaled/jw8/url.html?src=http://www.html-editor.tk/nature.mp4 -->
-
-
+<!-- http://www.html-editor.tk/jw/url.html?src=/nature.mp4 -->
