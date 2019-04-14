@@ -1,5 +1,5 @@
 {"links": "iptv",
-"2m":"http://cdnamd-hls-globecast.akamaized.net/live/ramdisk/2m_monde/hls_video_ts/index.m3u8",
+"tv2m":"http://cdnamd-hls-globecast.akamaized.net/live/ramdisk/2m_monde/hls_video_ts/index.m3u8",
 "rtm":"http://cdn-hls.globecast.tv/live/ramdisk/al_aoula_inter/hls_snrt/al_aoula_inter.m3u8",
 "tv8":"http://cdnamd-hls-globecast.akamaized.net/live/ramdisk/tamazight_tv8_snrt/hls_snrt/tamazight_tv8_snrt.m3u8",
 "arriadia":"http://cdnamd-hls-globecast.akamaized.net/live/ramdisk/arriadia/hls_snrt/index.m3u8",
