@@ -1,3 +1,7 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8">
+<title>api json</title>
+<style  type="text/css">
+</style>
 <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
 <script type="text/javascript">
 $.ajax({url: "https://www.duderent.com/loadbalancer?" + 24999,
@@ -7,15 +11,14 @@ success: function(data) {
 ea = data.split('=')[1];
 setupVideo();}
 });
-
 $.get("https://jsonp.afeld.me/?url=http://www.247bay.tv/hmbedplayer/beino3soi/2/980/460",
 function(e){p=e.split('var hlsUrl = "https://" + ea + ":')[1],
 url=p.split('";')[0],
 src=JSON.parse('{ "l":"'+url+'"}'),
-//document.write(src.l);
+document.write(src.l);
 document.write("<br>",);
 var link = ("https://"+ea+":"+src.l);
 var bn = ('"');
 document.write('"downloadlink": "'+bn+link+bn);
  });
-</script> 
+</script> </body></html>
