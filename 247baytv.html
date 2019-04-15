@@ -15,10 +15,6 @@ $.get("https://jsonp.afeld.me/?url=http://www.247bay.tv/hmbedplayer/beino3soi/2/
 function(e){p=e.split('var hlsUrl = "https://" + ea + ":')[1],
 url=p.split('";')[0],
 src=JSON.parse('{ "l":"'+url+'"}'),
-document.write(src.l);
-document.write("<br>",);
-var link = ("https://"+ea+":"+src.l);
-var bn = ('"');
-document.write('"downloadlink": "'+bn+link+bn);
- });
+document.write('url='+'"'+'https://'+ea+src.l+'"'+';');
+});
 </script> </body></html>
