@@ -2,6 +2,7 @@
 <title>api json</title>
 <style  type="text/css">
 </style>
+<div id="ap"></div>
 <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
 <script type="text/javascript">
 $.ajax({url: "https://www.duderent.com/loadbalancer?" + 24999,
@@ -15,6 +16,7 @@ $.get("https://jsonp.afeld.me/?url=http://www.247bay.tv/hmbedplayer/beino3soi/2/
 function(e){p=e.split('var hlsUrl = "https://" + ea + ":')[1],
 url=p.split('";')[0],
 src=JSON.parse('{ "l":"'+url+'"}'),
-document.write('url='+'"'+'https://'+ea+src.l+'"'+';');
+document.getElementById("ap");
+ap.innerHTML=('url='+'"'+'https://'+ea+src.l+'"'+';');
 });
 </script> </body></html>
