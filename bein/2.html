@@ -1,0 +1,23 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8">
+<title>247baytv bein2</title><style  type="text/css">
+html,body {height:100%; width:100%; padding:0; margin:0; }
+video {height:100%;width:100%; padding:0; margin:0;position:fixed;}
+video {object-fit: fill;}</style>
+<video  id="ap" src="" width="100%"  height="100%" autoplay controls 
+poster="http://www.jumptv.ml/img/bein3.jpg"></video>
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+<script type="text/javascript">
+$.ajax({url: "https://www.duderent.com/loadbalancer?" + 24999,
+dataType: "text",
+type: "GET",
+success: function(data) {
+ea = data.split('=')[1];
+setupVideo();}
+});
+$.get("https://jsonp.afeld.me/?url=http://www.247bay.tv/hmbedplayer/beinsports2hbdfha/2/980/460",
+function(e){p=e.split('var hlsUrl = "https://" + ea + "')[1],
+url=p.split('";')[0],
+src=JSON.parse('{ "l":"'+url+'"}'),
+document.getElementById("ap");
+ap.src = ('https://'+ea+src.l);
+}); </script> </body></html>
