@@ -13,9 +13,7 @@ function(m,key,value)
 {vars[key]=value});return vars}
 var url=getUrlVars()["src"];
 var iptv=(url);
-jwplayer("my-video").setup({file:iptv,
-image:"",
-logo: {file: "http://www.html-editor.tk/img/khaledtv.png", position: 'top.left', hide: 'true', margin: '2', 
-linktarget: '_blank',hide: 'false', over: '70',out: '', link: "http://www.khaledtv.ga"},
-title: 'www.khaledtv.ga',autostart:"true",width: "100%",height: "100%",
+jwplayer("my-video").setup({file:iptv,image:"",
+logo: {file:"/img/khaledtv.png",linktarget:'_blank',link:"http://www.khaledtv.ga",
+position: 'top-center',},title:'www.khaledtv.ga',autostart:"true",width: "100%",height: "100%",
 stretching: "exactfit",primary:"flash"});</script></body></html>
