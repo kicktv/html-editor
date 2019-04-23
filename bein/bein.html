@@ -4,26 +4,7 @@ html,body {height:100%; width:100%; padding:0; margin:0; }
 iframe {height:100%;width:100%; padding:0; margin:0;position:fixed;}</style>
 <iframe  id="ap" src=""  allowtransparency="true" frameborder="0" width="100%"  height="100%"></iframe>
 <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
-<script type="text/javascript">
-$.ajax({url: "https://www.duderent.com/loadbalancer?" + 24999,
-dataType: "text",
-type: "GET",
-success: function(data) {
-ea = data.split('=')[1];
-setupVideo();}
-});
-function getUrlVars(){var vars={};
-var parts=window.location.href.replace(/[?$]+([^=$]+)=([^$]*)/gi,
-function(m,key,value)
-{vars[key]=value});return vars}
-var id=getUrlVars()["id"];  
-$.get("https://jsonp.afeld.me/?url=http://www.247bay.tv/hmbedplayer/" + id + "/2/980/460",
-function(e){p=e.split('var hlsUrl = "https://" + ea + "')[1],
-url=p.split('";')[0],
-src=JSON.parse('{ "l":"'+url+'"}'),
-document.getElementById("ap");
-ap.src = "http://www.html-editor.tk/bein/url.html?src=" + ('https://'+ea+src.l);
-}); </script> </body></html>
+<script type="text/javascript" src="bein.js"></script></body></html>
 <!--
 http://www.html-editor.tk/bein/bein?id=beinsportsdewaq1q
 http://www.html-editor.tk/bein/bein?id=beinsports2hbdfha
