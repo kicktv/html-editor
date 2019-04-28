@@ -1,0 +1,314 @@
+<HTML>
+<head> 
+<META HTTP-EQUIV="Cache-Control" CONTENT="no-cache">
+<META HTTP-EQUIV="Pragma" CONTENT="no-cache">
+<META HTTP-EQUIV="Expires" CONTENT="0">
+<title>IPTV-PLANET.COM Embed</title><base  href="http://embed.iptv-pla.net/">
+
+
+<script type="text/javascript">
+var i=1;
+
+
+function clignote() {
+if (i == 1) {
+document.getElementById("testX").style.display="none";
+//alert(document.getElementById("closeText").innerHTML);
+i=0;
+} else {
+document.getElementById("testX").style.display = "";
+i=1;
+}
+}
+//setTimeout("clignote();",1000);
+//setInterval("clignote();",1000);
+</script>
+
+
+<script type="text/javascript">
+var myPlayer="/swfs/player.swf";
+var streamer="http://web3.iptv-planet.com:8081/edge";
+var country = "TT";	
+/*
+if( country == "UK" )
+		{
+			 myPlayer="playerEc.swf";
+			 streamer="rtmp://";
+		}
+if( country == "GB" )
+		{
+			 myPlayer="playerEc.swf";
+			 streamer="rtmp://";
+		} */
+		
+myPlayer="/swfs/player.swf";
+streamer="http://web3.iptv-planet.com:8081/edge";
+
+var channelname="Hi_mbc1";
+
+
+if((channelname == "Hi_mbc1") || (channelname == "mbcmasr") || (channelname == "at") || (channelname == "n") )
+{
+			  streamer="";
+			// streamer="rtmp://web4.iptv-planet.com/live";
+}
+
+
+
+/*
+if((channelname == "Hi_mbc1") || (channelname == "mbcmasr") || (channelname == "Hi_TVA3") || (channelname == "t1") || (channelname == "Hi_nilesport") || (channelname == "t2") || (channelname == "at") || (channelname == "Hi_Arriadia"))
+{
+			 streamer="";
+}*/
+
+
+
+var streamer2=streamer;
+
+if(self.location==top.location) {
+	
+	if((channelname == "Hi_mbc1") || (channelname == "mbcmasr") || (channelname == "mtv") || (channelname == "Hi_ALhayat") || (channelname == "iqraa") || (channelname == "Hi_mbc3")){
+		streamer="rtmp://iptv-planet.com.usa.not.allowed.for.this.channel";
+		function jsonpCallback(data) { 
+			country = data.address.country_code;
+			if( (country != "US") && (country != "") ){
+				streamer=streamer2;
+			}
+		 }
+	}
+}
+
+		
+</script>
+
+<script src="http://api.wipmania.com/jsonp?callback=jsonpCallback" type="text/javascript"></script>
+<!--
+<script type="text/javascript" src="http://www.adcash.com/script/java.php?option=rotateur&r=91645"></script>
+-->
+<script data-cfasync="false" type="text/javascript" src="http://www.adnetworkperformance.com/a/display.php?r=91645"></script>
+
+<!-- PopAds.net Popunder Code for embed.iptv-pla.net -->
+<script type="text/javascript" data-cfasync="false">
+/*<![CDATA[/* */
+  var _pop = _pop || [];
+  _pop.push(['siteId', 1323366]);
+  _pop.push(['minBid', 0]);
+  _pop.push(['popundersPerIP', 0]);
+  _pop.push(['delayBetween', 0]);
+  _pop.push(['default', false]);
+  _pop.push(['defaultPerDay', 0]);
+  _pop.push(['topmostLayer', false]);
+  (function() {
+    var pa = document.createElement('script'); pa.type = 'text/javascript'; pa.async = true;
+    var s = document.getElementsByTagName('script')[0]; 
+    pa.src = '//c1.popads.net/pop.js';
+    pa.onerror = function() {
+      var sa = document.createElement('script'); sa.type = 'text/javascript'; sa.async = true;
+      sa.src = '//c2.popads.net/pop.js';
+      s.parentNode.insertBefore(sa, s);
+    };
+    s.parentNode.insertBefore(pa, s);
+  })();
+/*]]>/* */
+</script>
+<!-- PopAds.net Popunder Code End -->
+
+<script src="https://s3.amazonaws.com/wafmedia6.com/m/p.js?a=65671585&amp;p=65601592&amp;f=200&amp;t=continue&amp;n=blank&amp;s=3" type="text/javascript"></script>
+
+
+
+<script>var isAdBlockActive=true;</script>
+<script src="ads.js"></script>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+<link rel="stylesheet" href="build/mediaelementplayer.css">
+<script src="build/mediaelement-and-player.js"></script>
+
+</head>
+
+<body bgcolor="#000" topmargin=0 marginheight=0 style="padding-top:0px; margin:0px;">
+
+<script>
+$( document ).ready(function() {
+
+    console.log( "ready!" );
+	$('video').mediaelementplayer();
+});
+
+</script>
+
+
+<div id='mediaspace'>
+	<video id="player1" width="980" height="560" autoplay="true" preload="none" controls playsinline webkit-playsinline>
+    <source src="http://www.html-editor.tk/tamazight.m3u8" type="application/x-mpegURL">              
+  </video>
+</div>
+
+<div id="floatLayer1" style="position: absolute; top: 50px; left: 20px; height: 258px; width: 645px">
+
+
+
+
+	<div id="firstad" style="width:590px;height:401px;position:absolute;top:15px;left:66px;z-index:2147480100;background:url(images/overlay.png);display:none;">
+			<div id="textid" style="width:468px;position:relative;top:10px;text-align:center;color:#ffffff;font-family:Verdana;font-size:11px;z-index:2147403101;"><span id="counterInner"></span> seconds to close the ad.</div>
+
+			<div id="testX" style="position:absolute;top:55px;left:134px;height:30px;width:200;text-align:center;border:0;z-index:2147480103;display:none;">
+				
+				<center><span onclick="removeOverlayHTML()" style="color:blue"><div id="closeText"> X Close</div> </span></center>
+			</div>
+			<div id="ad1" style="width:300px;height:250px;position:absolute;top:50px;left:84px;background:#fff;z-index:2147480102;"></div>
+	</div>
+
+
+
+</div>
+
+
+
+
+
+<script type="text/javascript">
+
+var ad300="http://embed.iptv-pla.net/wafra300.html";
+
+//ad300="http://rtb-ads.avazu.net/tt?id=4166491&size=300x250";
+
+//ad300="http://ib.adnxs.com/tt?id=4187160&cb=[CACHEBUSTER]&referrer=[REFERRER_URL]&pubclick=[INSERT_CLICK_TAG]";
+	
+/*		
+	
+
+
+if( country == "TR" )
+		{
+			ad300="http://livestreambox.net/zoomin_ads.html";
+		}
+if( country == "ES" )
+		{
+			ad300="http://livestreambox.net/zoomin_ads.html";
+		}
+
+*/
+
+		
+var adCount ="20";
+
+function removeOverlayHTML()
+{
+        document.getElementById("ad1").innerHTML = "";
+        document.getElementById("firstad").style.display="none";
+		document.getElementById("testX").style.display="none"; 
+        interval=0;
+
+        document.getElementById("counterInner").innerHTML=0;
+		
+		clearInterval(myInterval);
+		
+			
+
+		
+}
+
+
+function setOverlayHTML()
+{
+		//alert(ad300);
+		ad300="http://embed.iptv-pla.net/wafra300.html";
+		ad300="http://freelivestream.tv/adskeeper.html";
+		
+        document.getElementById("ad1").innerHTML = "<iframe frameborder='0' marginheight='0' marginwidth='0' scrolling='no' src='"+ad300+"' width='300' height='250'></iframe>";
+	document.getElementById("textid").style.display = "";
+        document.getElementById("counterInner").innerHTML=adCount;
+		adCount="10";
+        interval=setInterval("countDown()",1000);
+        document.getElementById("firstad").style.display="";
+		 
+		
+		
+		
+}
+
+function setOverlayHTML2()
+{
+		ad300="http://iptv-planet.com/wafra300.html";
+		ad300="http://freelivestream.tv/adskeeper.html";
+        document.getElementById("ad1").innerHTML = "<iframe frameborder='0' marginheight='0' marginwidth='0' scrolling='no' src='"+ad300+"' width='300' height='250'></iframe>";
+	document.getElementById("textid").style.display = "";
+        document.getElementById("counterInner").innerHTML=adCount;
+		adCount="10";
+        interval=setInterval("countDown()",1000);
+        document.getElementById("firstad").style.display="";
+		 
+		
+		
+		
+}
+
+function countDown()
+{
+    
+    currentCD=parseInt(document.getElementById("counterInner").innerHTML);
+		
+        if (currentCD==1) {
+		 document.getElementById("textid").style.display = "none";
+              	document.getElementById("testX").style.display="";
+				myInterval=setInterval("clignote();",1000);
+				clearInterval(interval);
+	}else {
+			document.getElementById("counterInner").innerHTML=(currentCD-1);	
+	}
+
+}
+
+
+//setTimeout("setOverlayHTML2()",2000);
+//setOverlayHTML2();
+//setTimeout("setOverlayHTML()",100000);
+//setTimeout("setOverlayHTML2()",300000);
+//setTimeout("setOverlayHTML()",600000);
+//setTimeout("setOverlayHTML2()",900000);
+//setTimeout("setOverlayHTML()",1200000);				
+
+//timer1=setInterval("setOverlayHTML()",200000);				
+			
+				
+</script>
+
+
+
+
+<script type="text/javascript">
+/*
+if(self.location != top.location) 
+{
+document.write("<script type=\"text\/javascript\" src=\"http:\/\/www.adcash.com\/script\/java.php?option=rotateur&rotateur=91926\"><\/script>");
+
+}*/
+</script>
+
+
+<div style="visibility:hidden">  
+<!-- Histats.com  START  (standard)-->
+<script type="text/javascript">document.write(unescape("%3Cscript src=%27http://s10.histats.com/js15.js%27 type=%27text/javascript%27%3E%3C/script%3E"));</script>
+<a href="http://www.histats.com" target="_blank" title="free hit counter code" ><script  type="text/javascript" >
+try {Histats.start(1,2736446,4,1,120,40,"00010001");
+Histats.track_hits();} catch(err){};
+</script></a>
+<noscript><a href="http://www.histats.com" target="_blank"><img  src="http://sstatic1.histats.com/0.gif?2736446&101" alt="free hit counter code" border="0"></a></noscript>
+<!-- Histats.com  END  -->
+
+
+
+
+
+
+
+
+</div>
+
+
+
+
+</body>
+</html>
