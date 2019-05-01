@@ -3,9 +3,13 @@
 html,body {height:100%; width:100%; padding:0px; margin:0px;}
 video {object-fit:fill;position:fixed; height:100%;width:100%; padding:0px; margin:0px;}
 </style></head><body><video  id="app"  width="100%"  height="100%"  controls poster="" src=""></video>
-<script> function getUrlVars(){var vars={};
-var parts=window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi,
-function(m,key,value) {vars[key]=value});return vars} var id=getUrlVars()["id"];
+<script>
+function gup(e){e=e.replace(/[\[]/,"\\[").replace(/[\]]/,"\\]");
+var n="[\\?&]"+e+"=([^&#]*)",
+l=new RegExp(n),
+c=l.exec(window.location.href);
+return null==c?"1P1WefStFxocw0BtbaBfK6n-3n5ffEVn6":unescape(c[1])}
+var id=gup("id");
 var url="https://www.googleapis.com/drive/v3/files/"+id+"?alt=media&key=AIzaSyA-nJxjNOM-s7fpcd8BObs7VgxgPgaEpcU";
 document.getElementById("app").src=url; 
 </script></body></html>
