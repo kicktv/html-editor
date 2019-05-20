@@ -18,13 +18,26 @@ body { margin: 0;font-family: Arial, Helvetica, sans-serif;}
 @media screen and (max-width:980px) {
   .header a {float: none; display: block; text-align: center; }
   .header-right {float: none;  } }
-</style></head><body>
 
+#menutv ul {list-style-type: none; margin: 0px; padding: 0px; overflow: hidden; 
+width:99%; height:30px; background-color:#050505;margin-left:auto; margin-right:auto;}
+#menutv li {float: right; width: 50%;}
+#menutv li a {display: block;font-family: arial; font-size: 20px; color: yellow; text-align: center;  padding: 3px; text-decoration: none;}
+#menutv li a:hover {background-color:#ff8000; height:30px; color: white;}
+
+.fram {max-width:980px;}
+.embed-video{position: relative; width:99%; padding-bottom: 56.25%; height: 0; }
+ iframe{position: absolute; top: 0; left: 0; width: 100%; height:90%; opacity: .9; }
+@media only screen and (max-width:1000px) {iframe{height:83%;}}
+</style></head><body>
 <div class="header">
 <a href="/header.html" class="logo">flaxtv.ga</a></div>
-
-<div style="">
-  <center><h1>Responsive Header</h1>
-  <p>Resize the browser window to see the effect.</p>
-  <p>Some content..</p> </center></div>
-</body></html>
+<center><h1>Responsive Header</h1></center><br>
+<center><div class='fram'>
+<div id="menutv"><ul><li>
+<a rel="nofollow"  href="http://algeria-tv.com/MBC-3/tv-1.php"   target="myifram"><b>SERVER 2</b></a></li>
+<li><a rel="nofollow"  href="http://www.html-editor.tk/live/mbc3"  target="myifram"><b>SERVER 1</b></a></li></ul></div>
+<div class='embed-video'>
+<iframe  name="myifram" allowfullscreen="allowfullscreen" scrolling="no" rel="nofollow" 
+src="http://www.html-editor.tk/live/mbc3" width="100%" height="100%" frameborder="0"></iframe>
+</div></div></center></body></html>
