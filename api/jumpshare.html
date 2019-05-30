@@ -1,0 +1,28 @@
+<!DOCTYPE html><html><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width"><title> api jumpshare </title>
+<style type="text/css">html,body {height:100%; width:100%; padding:0px; margin:0px; }
+#my-video{position:fixed; height:100%;width:100%; padding:0px; margin:0px;}
+</style></head><body><div id="my-video">
+<video  width="100%"  height="100%"  controls  id="api"  src="" type="video/mp4" poster=""></video></div>
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+<script type="text/javascript">
+function gup(e){e=e.replace(/[\[]/,"\\[").replace(/[\]]/,"\\]");
+var n="[\\?&]"+e+"=([^&#]*)",
+l=new RegExp(n),
+c=l.exec(window.location.href);
+return null==c?"https://jumpshare.com/v/s2Gg6u7leGFMaWc99xYi":unescape(c[1])}
+var url=gup("src");
+$.get("http://www.html-editor.ga/proxy.php?src="+(url),
+function(e){p=e.split('data-preview-url="')[1],
+url=p.split('">')[0],
+//x=e.split('og:image" content="')[1],
+//id=x.split('"/>')[0],
+//pk=JSON.parse('{ "l":"'+id+'"}'),
+src=JSON.parse('{ "l":"'+url+'"}'),
+document.getElementById("api");
+var video = (src.l);
+api.src=(video);
+//var img =(pk.l);
+//api.poster=(img);    
+});
+</script></body></html>
