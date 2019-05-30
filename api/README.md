@@ -1,1 +1,5 @@
- 	##[api](http://www.html-editor.tk/api/)
+ 	#api
+  
+[facebook](http://www.html-editor.tk/api/facebook.html)
+  
+[jumpshare](http://www.html-editor.tk/api/jumpshare.html)
