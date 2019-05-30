@@ -1,1 +1,1 @@
- 	#http://www.html-editor.tk/api/
+ 	##[api](http://www.html-editor.tk/api/)
