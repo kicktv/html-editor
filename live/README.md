@@ -18,3 +18,5 @@
 [mbc4 tv](http://www.html-editor.tk/live/mbc4.html)
 
 [spacetoon tv](http://www.html-editor.tk/live/spacetoon.html)
+
+[rotana-cinema tv](http://www.html-editor.tk/live/rotana-cinema.html)
