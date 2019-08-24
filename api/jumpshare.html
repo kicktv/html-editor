@@ -12,7 +12,7 @@ l=new RegExp(n),
 c=l.exec(window.location.href);
 return null==c?"https://jumpshare.com/v/s2Gg6u7leGFMaWc99xYi":unescape(c[1])}
 var url=gup("src");
-$.get("http://www.html-editor.ga/proxy.php?src="+(url),
+$.get("https://jsonp.afeld.me/?url="+(url),
 function(e){p=e.split('data-preview-url="')[1],
 url=p.split('">')[0],
 //x=e.split('og:image" content="')[1],
