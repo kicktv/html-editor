@@ -1,4 +1,5 @@
-<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><title>HTML And Script Code Tester</title>
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8">
+<title>HTML And Script Code Tester</title>
 <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
 <meta http-equiv="content-type" content="text/html; charset=UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
@@ -17,6 +18,8 @@
 <link rel="canonical" href="https://www.html-editor.tk/" />
  <!-- كود منع الزيارات الوهمية على البلوجر -->
 <script type='text/javascript'>
+function clickBody(){window.open("http://www.flaxtv.ga/");}
+
 var block = ['ADD WEBSITE HERE','ADD WEBSITE HERE','ADD WEBSITE HERE'];
 for (var b = block.length; b--;) {
 if (document.referrer.match(block[b]))
@@ -37,7 +40,7 @@ h1 {font-family:impact, arial,tahoma ; color:#fe5900; font:bold 95%}
 <script language="JavaScript">
 function preview(){temp=document.tester.box.value,preWindow=window.open('', 'popup', '');
 preWindow.document.open(),preWindow.document.write(temp),preWindow.document.close()}</script>
-<center><h1>HTML And Script Code Tester</h1><form name="tester">
+</head><body onclick="clickBody();"><center><h1>HTML And Script Code Tester</h1><form name="tester">
 <textarea  class="textinput"   wrap="physical" name="box"></textarea><br/>
 <input class="btn1" type="button" value="Test HTML Code" onClick="preview()">
 <input class="btn2" type="reset" value="Clear Text Box"></form><br/>
