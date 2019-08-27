@@ -1,15 +1,3 @@
 #EXTM3U
 #EXT-X-VERSION:3
-#EXT-X-TARGETDURATION:11
-#EXTINF:10.0000,
-http://livecdnh2.tvanywhere.ae/hls/mbc3/03.m3u8
-#EXTINF:10.0000,
-20190221T021754-03-12210873.ts
-#EXTINF:10.0000,
-http://livecdnh2.tvanywhere.ae/hls/mbc3/03.m3u8
-#EXTINF:10.0000,
-http://livecdnh2.tvanywhere.ae/hls/mbc3/03.m3u8
-#EXTINF:10.0000,
-http://livecdnh2.tvanywhere.ae/hls/mbc3/03.m3u8
-#EXTINF:10.0000,
 http://livecdnh2.tvanywhere.ae/hls/mbc3/03.m3u8
