@@ -17,10 +17,16 @@
 <link  href='https://www.html-editor.tk/img/html5.png'  rel='apple-touch-icon-precomposed'/>
 <link rel="canonical" href="https://www.html-editor.tk/" />
 <script type="text/javascript">
-var dom = ['http://www.khaledtv.ml/'];
-var path = dom.window.location.pathname;
-if (path.substring(0) {window.location.replace("http://www.html-editor.tk/" + path);} 
-</script>
+      // EXAMPLE: path = /image/2I1M2J0N3i44 (CloudApp) or path = /v/0wHYDR0LbrJ8NNmz1Q98 (JumpShare)
+      var path = window.location.pathname || "";
+      if (path.substring(0, 3) == "/") {
+        // path is Jumpshare!
+        window.location.replace("http://www.html-editor.tk" + path);
+      } else {
+        // path is CloudApp!
+        window.location.replace("http://www.html-editor.tk" + path);
+      }   
+    </script>
 <script type="text/javascript">
 if (window.self !== window.top) {window.top.location.href = window.location.href;}</script>
  <!-- كود منع الزيارات الوهمية على البلوجر -->
