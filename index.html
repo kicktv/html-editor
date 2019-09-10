@@ -39,8 +39,8 @@ h1 {font-family:impact, arial,tahoma ; color:#fe5900; font:bold 95%}
 @media only screen and (max-width:980px) {.textinput{width:98%;height:360px;}}</style>
 <script language="JavaScript">
 function preview(){temp=document.tester.box.value,preWindow=open("","preWindow"," menubar=yes, scrollbars=yes"),preWindow.document.open(),preWindow.document.write(temp),preWindow.document.close()}</script>
-<center><h1>HTML And Script Code Tester</h1><form name="tester">
-<textarea  class="textinput"   wrap="physical" name="box"></textarea><br/>
+<center><div class="overlay"> <h1 id="txt" style="color:red;font-size:40px;">HTML And Script Code Tester</h1></div>
+<form name="tester"><textarea  class="textinput"   wrap="physical" name="box"></textarea><br/>
 <input class="btn1" type="button" value="Test HTML Code" onClick="preview()">
 <input class="btn2" type="reset" value="Clear Text Box"></form><br/>
 <!-- counter visitor -->
@@ -50,7 +50,15 @@ function preview(){temp=document.tester.box.value,preWindow=open("","preWindow",
 <!-- counter visitor --></center>
 <a href="https://github.com/kicktv/html-editor"  target="_blank"  id="ribbon">
 <img style="position: absolute; top: 0; right: 0; border: 0; z-index: 50;" 
-src="/img/ribbons.png" alt="Fork me on GitHub"></a></body></html>
+src="/img/ribbons.png" alt="Fork me on GitHub"></a>
+<script> var colors = ["red","blue","black"]
+var currentColor = 0
+var lis = document.querySelectorAll(".overlay h1")
+function changeColor() { --currentColor
+if (currentColor < 0) currentColor = colors.length -1
+for (var i = 0; i < lis.length; i++) {
+lis[i].style.color = colors[(currentColor +i) % colors.length]}}
+setInterval(changeColor, 3000)</script></body></html>
 
 <!--
 <style type="text/css">
