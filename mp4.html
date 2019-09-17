@@ -1,3 +1,33 @@
+<!DOCTYPE html><html><head><meta charset="utf-8">
+<title> Test Video </title>
+<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1"/>  
+<style  type="text/css">
+html, body {margin : 0px ;height : 100% ;width : 100% ;}
+#page {padding-bottom : 40px ;}
+#header, #footer { height : 40px ;text-align : center ; width : 100% ; }
+#header {background-color : #02C54C;font-size: 30px;line-height:45px;height: 50px;font-family: impact,arial;color: white;}
+#footer {font-size:20px; color: white; position : fixed ;bottom : 0px ;background-color :  #02C54C ;line-height:35px;height: 35px;}
+.bat {width:700px; height:36px;  border: 1px solid #02C54C; z-index:1;}
+@media only screen and (max-width:980px) {.bat{width:90%;}}
+.btn {color: #fff;background-color:#02C54C;border-color:#02C54C;
+z-index: 2;margin-left: -65px;width: 60px;height:38px;}
+.vid video{object-fit:fill; width:714px; height:402px;  border: 1px solid #000; z-index:1;}
+@media only screen and (max-width:980px) {.vid video{width:99%;height:auto;}}
+</style></head><body><div id="page"><div id="header">Test Video Free Online </div><center><br><div id="main">
+<input class="bat" type="url" id="source" value="https://kicktv.github.io/html-editor/videos/sintel.mp4 ">
+<button type="submit" class="btn" onclick="javascript:loadVideo()">Play</button>
+<br><br><div class="vid"> <video  id="app"  width="100%"  height="100%"  controls 
+poster="" src="https://kicktv.github.io/html-editor/videos/nature.mp4"></video></div><br>
+<script type="text/javascript">function loadVideo() {
+var vid = document.getElementById('app');
+vid.src = document.getElementById('source').value;
+vid.poster = document.getElementById('source').value;}</script>
+</div></center> </div>  <!-- /page -->
+<div id="footer"> Copyright © 2018 html-editor.tk - All Right Reserved </div></body></html> 
+
+<!--
 <!DOCTYPE html><html><head><meta charset="utf-8"><title> Test Video </title>
 <meta http-equiv="content-type" content="text/html; charset=UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1"/>  
@@ -25,9 +55,7 @@ poster="" src="https://kicktv.github.io/html-editor/videos/nature.mp4"></video><
 var vid = document.getElementById('app');
 vid.src = document.getElementById('source').value;
 vid.poster = document.getElementById('source').value;}
-</script></center></body></html>
-
-
+</script></center></body></html> -->
 
 
 <!--
