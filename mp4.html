@@ -16,8 +16,9 @@ z-index: 2;margin-left: -65px;width: 60px;height:38px;}
 .vid video{object-fit:fill; width:714px; height:402px;  border: 1px solid #000; z-index:1;}
 @media only screen and (max-width:980px) {.vid video{width:99%;height:auto;}}
 </style></head><body><div id="page"><div id="header">Test Video Free Online </div><center><br><div id="main">
-<input class="bat" type="url" id="source" value="https://kicktv.github.io/html-editor/videos/sintel.mp4 ">
-<button type="submit" class="btn" onclick="javascript:loadVideo()">Play</button>
+<form id="player-form">
+<input class="bat" type="url" id="source" value="https://kicktv.github.io/html-editor/videos/sintel.mp4" required>
+<button type="submit" class="btn" onclick="javascript:loadVideo()">Play</button></form>
 <br><br><div class="vid"> <video  id="app"  width="100%"  height="100%"  controls 
 poster="" src="https://kicktv.github.io/html-editor/videos/nature.mp4"></video></div><br>
 <script type="text/javascript">function loadVideo() {
