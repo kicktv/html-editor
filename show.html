@@ -1,14 +1,19 @@
 <!DOCTYPE html><html lang="en"><head><meta charset="utf-8">
 <title> show code source </title><style type="text/css"></style>
 <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
-</head><body><script type='text/javascript'>
-function getUrlVars(){var vars={};
-var parts=window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi,
-function(m,key,value)
-{vars[key]=value});return vars}
-var video=getUrlVars()["src"];
-$.ajax({ url: (video), success: function(data) {document.write(data); } });
-</script></body></html> 
+</head><body>
+<script type="text/javascript">
+function getUrl(url){url=url.replace(/[\[]/,"\\[").replace(/[\]]/,"\\]");
+var n="[\\?&]"+url+"=([^&#]*)",
+l=new RegExp(n),
+c=l.exec(window.location.href);
+return null==c?"https://v.sharefa.st/q8JUeymbSYY1.mp4":unescape(c[1])}
+var url=getUrl("src");
+var website = "https://jsonp.afeld.me/?url="+url;
+$.ajax({ url: (website), success: function(data) {document.write(data); }
+ });
+</script></body></html>
 <!--
+http://www.html-editor.tk/show.html?src=http://www.html-editor.ga/
 http://www.html-editor.tk/show.html?src=http://www.html-editor.tk/mail.html
 -->
