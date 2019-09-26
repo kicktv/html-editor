@@ -14,13 +14,18 @@ html, body {margin : 0px ;height : 100% ;width : 100% ;}
 .btn {color: #fff;background-color:#02C54C;border-color:#02C54C;
 z-index: 2;margin-left: -65px;width: 60px;height:38px;}
 .vid video{object-fit:fill; width:714px; height:402px;  border: 1px solid #000; z-index:1;}
-@media only screen and (max-width:980px) {.vid video{width:99%;height:auto;}}
-</style></head><body><div id="page"><div id="header">Test Video Free Online </div><center><br><div id="main">
+@media only screen and (max-width:980px) {.vid video{width:99%;height:auto;}}</style>
+<script language="JavaScript">
+function check(){if (window.location.hostname == "www.html-editor.tk") {}
+else { (window.location.href = 'http://www.html-editor.tk/mp4.html') }
+}check()</script>
+</head><body><div id="page"><div id="header">Test Video Free Online </div><center><br><div id="main">
 <input class="bat" type="url" id="source" value="http://www.drivetv.ga/video.mp4" required>
 <button type="submit" class="btn" onclick="javascript:loadVideo()">Play</button>
 <br><br><div class="vid"> <video  id="app"  width="100%"  height="100%"  controls 
 poster="" src=""></video></div><br>
-<script type="text/javascript">function loadVideo() {
+<script type="text/javascript">
+function loadVideo() {
 var vid = document.getElementById('app');
 vid.src = document.getElementById('source').value;
 vid.poster = document.getElementById('source').value;}</script>
