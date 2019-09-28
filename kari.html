@@ -1,11 +1,18 @@
-<h1 id="k"></h1>
+<center><h1 id="k"></h1>
 
 <script>
-var text = "kari.ben.07 ";
-var test;
-setTimeout(function go() {
-window.k.innerHTML += text;
 
-test = setTimeout(go,50);
-},10);
+var txt = "hello kari.ben.07@";
+
+var test = 0;
+
+var myDown ;
+
+myDown = setInterval(function kb(){
+
+window.k.innerHTML += txt[test++];
+if(test >= txt.length){
+clearTimeout(myDown);
+}
+},55);
 </script>
