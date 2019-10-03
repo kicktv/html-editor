@@ -26,7 +26,7 @@ if (document.referrer.match(block[b]))
 window.location = "http://www.flaxtv.ga/"; } </script>
 <!-- كود منع الزيارات الوهمية على البلوجر -->  
 <style  type="text/css">
-body {background:url(/img/body-bg.jpg) repeat scroll 0 0 transparent;}
+body {background: url(/img/bg-pattern.png) #1f78d1;}
 input.btn1 {font-size:20px; width:45%; height:40px;  color:black; font-family:impact,arial,tahoma,helvetica,sans-serif;
 background-color:#fefe00;border: 1px solid; border-color:#fff;border-radius:5px;}
 @media only screen and (max-width:980px) {input.btn1{width:47%; height:36px;}}
@@ -51,14 +51,14 @@ function preview(){temp=document.tester.box.value,preWindow=open("","preWindow",
 <!-- <a href="http://www.html-editor.tk/"  target="_blank"  id="ribbon">
 <img style="position: absolute; top: 0; right: 0; border: 0; z-index: 50;" 
 src="/img/ribbons.png" alt="Fork me on GitHub"></a> -->
-<script> var colors = ["red","blue","black"]
+<script> var colors = ["red","white"]
 var currentColor = 0
 var lis = document.querySelectorAll(".overlay h1")
 function changeColor() { --currentColor
 if (currentColor < 0) currentColor = colors.length -1
 for (var i = 0; i < lis.length; i++) {
 lis[i].style.color = colors[(currentColor +i) % colors.length]}}
-setInterval(changeColor, 3000)</script></body></html>
+setInterval(changeColor, 5000)</script></body></html>
 
 <!--
 <style type="text/css">
