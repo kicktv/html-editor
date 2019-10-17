@@ -3,16 +3,10 @@
 <meta http-equiv="content-type" content="text/html; charset=UTF-8">
 <!-- <META http-equiv="refresh" content="5; URL=/"> -->
 <script type="text/javascript">
-      // EXAMPLE: path = /image/2I1M2J0N3i44 (CloudApp) or path = /v/0wHYDR0LbrJ8NNmz1Q98 (JumpShare)
-      var path = window.location.pathname || "";
-      if (path.substring(0, 4) == "/201") {
-        // path is Jumpshare!
-        window.location.replace("http://www.flaxtv.ga" + path);
-      } else {
-        // path is CloudApp!
-        window.location.replace("/" + path);
-      }   
-    </script>
+var path = window.location.pathname || "";
+if (path.substring(0, 4) == "/201") {
+window.location.replace("http://www.flaxtv.ga" + path);} 
+else {window.location.replace("/" + path);} </script>
 <style  type="text/css">
 .page-404 .title h1{font-size:20em;margin:.1em .1em 0;line-height:100%;font-weight:900;color:#f00;}
 @media only screen and (max-width:600px) {.page-404 .title h1{font-size:12em;}}
