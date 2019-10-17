@@ -1,8 +1,9 @@
 #EXTM3U
 #EXT-X-VERSION:3
-#EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=562224,CODECS="avc1.66.30,mp4a.40.2",RESOLUTION=384x288
-http://cdnamd-hls-globecast.akamaized.net/live/ramdisk/2m_monde/hls_video_ts/2m_monde-video=400000-audio_AACL_qad_130400_110=130400.m3u8
-#EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=1198224,CODECS="avc1.66.31,mp4a.40.2",RESOLUTION=640x480
-http://cdnamd-hls-globecast.akamaized.net/live/ramdisk/2m_monde/hls_video_ts/2m_monde-video=1000000-audio_AACL_qad_130400_110=130400.m3u8
-#EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=1728224,CODECS="avc1.77.31,mp4a.40.2",RESOLUTION=640x480
-http://cdnamd-hls-globecast.akamaized.net/live/ramdisk/2m_monde/hls_video_ts/2m_monde-video=1500000-audio_AACL_qad_130400_110=130400.m3u8
+#EXT-X-STREAM-INF:BANDWIDTH=555703,AVERAGE-BANDWIDTH=555703,CODECS="avc1.42c01e,mp4a.40.2",RESOLUTION=384x216,FRAME-RATE=25.000
+http://cdnamd-hls-globecast.akamaized.net/live/ramdisk/2m_monde/hls_video_ts/2m_monde-avc1_400000=2-mp4a_130400_qad=1.m3u8
+#EXT-X-STREAM-INF:BANDWIDTH=1191704,AVERAGE-BANDWIDTH=1191704,CODECS="avc1.42c01f,mp4a.40.2",RESOLUTION=640x360,FRAME-RATE=25.000
+http://cdnamd-hls-globecast.akamaized.net/live/ramdisk/2m_monde/hls_video_ts/2m_monde-avc1_1000000=3-mp4a_130400_qad=1.m3u8
+#EXT-X-STREAM-INF:BANDWIDTH=1721703,AVERAGE-BANDWIDTH=1721703,CODECS="avc1.4d401f,mp4a.40.2",RESOLUTION=640x360,FRAME-RATE=25.000
+http://cdnamd-hls-globecast.akamaized.net/live/ramdisk/2m_monde/hls_video_ts/2m_monde-avc1_1500000=4-mp4a_130400_qad=1.m3u8
+
