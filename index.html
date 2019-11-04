@@ -17,8 +17,6 @@
 <link  href='https://www.html-editor.tk/img/html5.png'  rel='apple-touch-icon-precomposed'/>
 <link rel="canonical" href="https://www.html-editor.tk/" />
 <script type="text/javascript">
-if (window.top.location.host != "html-editor.tk") {document.body.innerHTML = "Access Denied";}</script>
-<script type="text/javascript">
 var isMobile = {
 Android: function() {
 return navigator.userAgent.match(/Android/i);
@@ -86,8 +84,9 @@ setInterval(changeColor, 7000)</script>
 var links = document.getElementsByTagName("a");
 for (var i=0; i<links.length; i++) {
 if (links[i].href.indexOf('hr-personnel') == -1) {
-links[i].href = 'redirect.html?url=' + links[i].href;}}
-</script></body></html>
+links[i].href = 'redirect.html?url=' + links[i].href;}} </script>
+<script type="text/javascript">
+if (window.top.location.host != "html-editor.tk") {document.body.innerHTML = "Access Denied";}</script></body></html>
 
 <!--
 <style type="text/css">
