@@ -17,6 +17,8 @@
 <link  href='https://www.html-editor.tk/img/html5.png'  rel='apple-touch-icon-precomposed'/>
 <link rel="canonical" href="https://www.html-editor.tk/" />
 <script type="text/javascript">
+if (window.top.location.host != "html-editor.tk") {document.body.innerHTML = "Access Denied";}</script>
+<script type="text/javascript">
 var isMobile = {
 Android: function() {
 return navigator.userAgent.match(/Android/i);
@@ -38,7 +40,6 @@ else if(isMobile.iOS())
 {document.location.href="editor";}
 </script>
 <script type="text/javascript">
-if (window.top.location.host != "html-editor.tk") {document.body.innerHTML = "Access Denied";}
 if (window.self !== window.top) {window.top.location.href = window.location.href;}</script>
  <!-- كود منع الزيارات الوهمية على البلوجر -->
 <script type='text/javascript'>
