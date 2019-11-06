@@ -6,14 +6,13 @@ video {object-fit: fill;}</style>
 <script src='https://cdn.jsdelivr.net/clappr/latest/clappr.min.js' type='text/javascript'></script>
 <script src='https://cdn.jsdelivr.net/clappr.level-selector/latest/level-selector.min.js' type='text/javascript'></script>
 </head><body><div id="player"></div><script>
-function gup(e){e=e.replace(/[\[]/,"\\[").replace(/[\]]/,"\\]");
+function get(e){e=e.replace(/[\[]/,"\\[").replace(/[\]]/,"\\]");
 var n="[\\?&]"+e+"=([^&#]*)",
 l=new RegExp(n),
 c=l.exec(window.location.href);
 return null==c?"/nature.mp4":unescape(c[1])}
-var file=gup("src");
-var link=(file);
- var player = new Clappr.Player(
+var link=get("src");
+var player = new Clappr.Player(
 {source:link,
 poster: "https://jumptv.github.io/img/bein3.jpg",autoPlay:true,height:"100%",
 width:"100%",parentId: "#player",mediacontrol: {seekbar: "#ff1d04", buttons: "#ff1d04"},
