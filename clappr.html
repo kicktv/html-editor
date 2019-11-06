@@ -10,7 +10,7 @@ function gup(e){e=e.replace(/[\[]/,"\\[").replace(/[\]]/,"\\]");
 var n="[\\?&]"+e+"=([^&#]*)",
 l=new RegExp(n),
 c=l.exec(window.location.href);
-return null==c?"http://www.html-editor.tk/nature.mp4":unescape(c[1])}
+return null==c?"/nature.mp4":unescape(c[1])}
 var file=gup("src");
 var link=(file);
  var player = new Clappr.Player(
