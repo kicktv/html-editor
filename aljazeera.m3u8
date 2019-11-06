@@ -1,0 +1,7 @@
+#EXTM3U
+#EXT-X-VERSION:3
+#EXT-X-TARGETDURATION:8
+#EXT-X-MEDIA-SEQUENCE:1429643
+#EXT-X-PROGRAM-DATE-TIME:2019-11-06T20:44:05.920Z
+#EXTINF:8.00000,
+https://documentary.streaming.aljazeera.net/apple/aljazeera/doc/appleman806.m3u8
