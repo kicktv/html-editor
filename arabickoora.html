@@ -1,1 +1,22 @@
-arabickoora
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8">
+<title>arabickoora </title><style type="text/css">
+html,body {height:100%; width:100%; padding:0; margin:0; }
+iframe {height:100%;width:100%; padding:0; margin:0;position:fixed;}</style>
+<iframe  id="ap" src=""  allowtransparency="true" frameborder="0" width="100%"  height="100%"></iframe>
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+<script type="text/javascript">
+$.ajax({url: "https://tvportremote.com/loadbalancer",
+success:function(data) {ea = data.split('=')[1];}
+});
+$.get("https://jsonp.afeld.me/?url=https://www.arabickoora.com/index_mobile.php",
+function(e){p=e.split('showChannels("')[1],
+url=p.split('");')[0],
+src=JSON.parse('{ "l":"'+url+'"}'),
+document.getElementById("ap");
+var ch = "mbc3ioo";
+var str = (src.l);
+var result = str.slice(-65, 2); 
+var res = str.slice(3);
+ap.src = "http://www.html-editor.tk/jwplayer7/url?src=https://"+ea+":8088/live/"+ch+"/playlist.m3u8?id=1&pk="+result+res;
+});
+</script></body></html>
