@@ -13,7 +13,14 @@ function(e){p=e.split('showChannels("')[1],
 url=p.split('");')[0],
 src=JSON.parse('{ "l":"'+url+'"}'),
 document.getElementById("ap");
-var ch = "mbc3ioo";
+
+function gup(e){e=e.replace(/[\[]/,"\\[").replace(/[\]]/,"\\]");
+var n="[\\?$]"+e+"=([^$#]*)",
+l=new RegExp(n),
+c=l.exec(window.location.href);
+return null==c?"mbc_202":unescape(c[1])}
+var ch=gup("id");
+
 var str = (src.l);
 var result = str.slice(-65, 2); 
 var res = str.slice(3);
