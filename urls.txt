@@ -5,6 +5,14 @@ http://kora-online.tv/222.php
 
 http://kora-online.tv/4.php
 
+https://s6.tntendirect.com/tf1/live/playlist.m3u8?wmsAuthSign=c2VydmVyX3RpbWU9Ny8xNi8yMDE5IDEwOjIxOjM1IFBNJmhhc2hfdmFsdWU9OVBoSTRYcVdPSzZVVm9aWFpsZlppdz09JnZhbGlkbWludXRlcz0zMA==
+
+https://streaming.medi1tv.com/live/Medi1tvmaghreb.sdp/playlist.m3u8#HD
+
+https://rmtv24hweblive-lh.akamaihd.net/i/rmtv24hwebes_1@300661/master.m3u8
+
+https://rmtv24hweblive-lh.akamaihd.net/i/rmtv24hweben_1@300662/master.m3u8
+
 https://code.jquery.com/jquery-3.3.1.min.js
 
 https://dl.dropboxusercontent.com/s/l5uhhwawsgkybjf/Roxette.mp3  
