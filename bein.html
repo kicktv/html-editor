@@ -1,0 +1,15 @@
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+<script type="text/javascript">
+function gup(e){e=e.replace(/[\[]/,"\\[").replace(/[\]]/,"\\]");
+var n="[\\?$]"+e+"=([^$#]*)",
+l=new RegExp(n),
+c=l.exec(window.location.href);
+return null==c?"mbc_202":unescape(c[1])}
+var id=gup("id");
+$.get("https://jsonp.afeld.me/?url=https://arembed.com/live.php?ch="+id,
+function(e){p=e.split("channel='")[1],
+url=p.split("',")[0],
+src=JSON.parse('{ "l":"'+url+'"}'),
+document.write(src.l);
+});
+</script>
