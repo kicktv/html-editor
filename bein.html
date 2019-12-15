@@ -9,13 +9,14 @@ function gup(e){e=e.replace(/[\[]/,"\\[").replace(/[\]]/,"\\]");
 var n="[\\?$]"+e+"=([^$#]*)",
 l=new RegExp(n),
 c=l.exec(window.location.href);
-return null==c?"mbc_202":unescape(c[1])}
+return null==c?"Bein_Sports3":unescape(c[1])}
 var id=gup("id");
 $.get("https://jsonp.afeld.me/?url=https://arembed.com/live.php?ch="+id,
 function(e){p=e.split("channel='")[1],
 url=p.split("',")[0],
 src=JSON.parse('{ "l":"'+url+'"}'),
 document.getElementById("ap");
-ap.src = "/arabickoora?id="+src.l;
+ap.src = "arabickoora?id="+src.l;
 });
 </script>
+</body></html>
