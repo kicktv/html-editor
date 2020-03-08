@@ -17,6 +17,16 @@
 <link  href='https://www.html-editor.tk/img/html5.png'  rel='apple-touch-icon-precomposed'/>
 <link rel="canonical" href="https://www.html-editor.tk/" />
 <style id="antiClickjack">body{display:none !important;}</style>
+ <script type="text/javascript">
+  //<![CDATA[
+  var links = document.getElementsByTagName("a");
+  for (var i=0; i<links.length; i++) {
+      if (links[i].href.indexOf('html-editor.tk') == -1) {
+          links[i].href = 'http://www.html-editor.tk/redirect.html?url=' + links[i].href;
+      }
+  }
+  //]]>
+  </script>  
 <script type="text/javascript">
 if (self === top) {var antiClickjack = document.getElementById("antiClickjack");
 antiClickjack.parentNode.removeChild(antiClickjack);} 
