@@ -8,7 +8,7 @@ iframe {height:100%;width:100%; padding:0; margin:0;position:fixed;}</style>
 $.ajax({url: "https://tvportremote.com/loadbalancer",
 success:function(data) {ea = data.split('=')[1];}
 });
-$.get("https://jsonp.afeld.me/?url=https://www.arabickoora.com/index_mobile.php",
+$.get("https://jsonp.afeld.me/?url=https://www.arabickoora.com/",
 function(e){p=e.split('showChannels("')[1],
 url=p.split('");')[0],
 src=JSON.parse('{ "l":"'+url+'"}'),
