@@ -51,16 +51,6 @@ else if(isMobile.iOS())
 <!--
 <script type="text/javascript">
 if (window.self !== window.top) {window.top.location.href = window.location.href;}</script> -->
-<style id="antiClickjack">body{display:none !important;}</style>
-
-<script type="text/javascript">
-   if (self === top) {
-       var antiClickjack = document.getElementById("antiClickjack");
-       antiClickjack.parentNode.removeChild(antiClickjack);
-   } else {
-       top.location = self.location;
-   }
-</script>
 <style  type="text/css">
 body {background: url(body.png) #cbcecb;}
 input.btn1 {font-size:20px; width:45%; height:40px;  color:black; font-family:impact,arial,tahoma,helvetica,sans-serif;
