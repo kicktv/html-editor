@@ -1,0 +1,22 @@
+<style>
+  #protector {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 99999999;
+  }
+</style>
+
+<div id="protector">
+  <a href="/" target="_blank">Go to the site</a>
+</div>
+
+<script>
+  // there will be an error if top window is from the different origin
+  // but that's ok here
+  if (top.document.domain == document.domain) {
+    protector.remove();
+  }
+</script>
