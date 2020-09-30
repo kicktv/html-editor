@@ -30,6 +30,14 @@
 if(document.referrer.indexOf("http://www.html-editor.tk") == -1) {
 {top.location.replace("http://www.html-editor.tk/");}} 
 </script>
+
+<script type="text/javascript">
+if( "sandbox" in document.createElement( "IFRAME" ) ) {
+  // render the iframe element...
+} else {// embed content through other ways,
+// as the browser does not support the sandbox
+}   
+</script>
    
 <!-- <script type="text/javascript">if (location.host != "www.html-editor.tk") location.href = "//www.html-editor.tk/";</script> -->
 <script type='text/javascript'>
