@@ -13,7 +13,7 @@
 <center><a href="/xxx.html" target="_blank">Go to the My Website</a></center>
 </div>
 <!-- link reference code: https://ko.javascript.info/clickjacking#ref-548 -->
-<script>if (top.document.domain == document.domain) {protector.remove();}</script>
+<script>if (top.document.domain !== document.domain) {protector.remove();}</script>
 </body></html>
 
 
