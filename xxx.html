@@ -15,17 +15,17 @@
 <link  href='img/html.png'  rel='apple-touch-icon-precomposed'/>
 <style type="text/css">
 html,body {height:100%; width:100%; padding:0px; margin:0px;}
+#protector {height:100%;width:100%;position:absolute;left: 0;top: 0;z-index: 99999999;}
 iframe {position:absolute; height:100%;width:100%; padding:0px; margin:0px;z-index:1}
-#host {height:100%;width:100%;position:absolute;left: 0;top: 0;z-index: 99999999;}
 </style></head><body>
+<div id="protector"><center><br><h1 style="color:blue;"> Welcome To My Website</h1>
+<h2 style="color:red;" id="host"></h2></center></div>
+<script>document.getElementById("host").innerHTML = window.location.hostname;</script>
+  
 <iframe src="http://www.html-editor.ga/" scrolling="no" frameborder="0" height="100%" width="100%" allowfullscreen>
 </iframe>
-<div id="host">
-<center><br><h1 style="color:blue;"> Welcome To My Website</h1>
-<h2 style="color:red;" id="dom"></h2></center></div>
-<script>document.getElementById("dom").innerHTML = window.location.hostname;</script>
 
-<script>if (top.document.domain == document.domain) {host.remove();}</script>
+<script>if (top.document.domain == document.domain) {protector.remove();}</script>
 </body></html>
 
 
