@@ -1,23 +1,26 @@
 <!DOCTYPE html><html lang="en"><head><meta charset="utf-8">
 <title>HTML And Script Code Tester</title>
-
-<script>
-var isDesktop = {
-Windows: function() {
-return navigator.platform.match('Win32|Win16|Win64|WinCE|Windows');
+<script type="text/javascript">
+var isMobile = {
+Android: function() {
+return navigator.userAgent.match(/Android/i);
 },
-Mac: function() {
-return navigator.platform.match('MacIntel|Macintosh|MacPPC|Mac68K');
+BlackBerry: function() {return navigator.userAgent.match(/BlackBerry/i);
+},
+iOS: function() {return navigator.userAgent.match(/iPhone|iPad|iPod/i);
+},
+Opera: function() {return navigator.userAgent.match(/Opera Mini/i);
+},
+Windows: function() {return navigator.userAgent.match(/IEMobile/i);
 },
 any: function() {
-return (isDesktop.Windows() || isDesktop.Mac());
+return (isMobile.Android() || isMobile.BlackBerry() || isMobile.iOS() || isMobile.Opera() || isMobile.Windows());
 }
 };
-if (isDesktop.any()){
-window.location='//m.html-editor.tk';
-}
+if ( isMobile.Android() ) {document.location.href = "//m.html-editor.tk";}
+else if(isMobile.iOS())
+{document.location.href="//m.html-editor.tk";}
 </script>
-
 <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
 <meta http-equiv="content-type" content="text/html; charset=UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
@@ -52,29 +55,6 @@ if(document.referrer.indexOf("http://www.html-editor.tk") == -1) {
 var block = ['khaledtv.ml','addmefast.com', 'html-editor.ml', 'http://websurf.mobi','http://auto.surf'];
 for (var b = block.length; b--;) 
 { if (document.referrer.match(block[b])) window.location = "http://www.flaxtv.ga/";}</script>
-
-<!-- 
-<script type="text/javascript">
-var isMobile = {
-Android: function() {
-return navigator.userAgent.match(/Android/i);
-},
-BlackBerry: function() {return navigator.userAgent.match(/BlackBerry/i);
-},
-iOS: function() {return navigator.userAgent.match(/iPhone|iPad|iPod/i);
-},
-Opera: function() {return navigator.userAgent.match(/Opera Mini/i);
-},
-Windows: function() {return navigator.userAgent.match(/IEMobile/i);
-},
-any: function() {
-return (isMobile.Android() || isMobile.BlackBerry() || isMobile.iOS() || isMobile.Opera() || isMobile.Windows());
-}
-};
-if ( isMobile.Android() ) {document.location.href = "//m.html-editor.tk";}
-else if(isMobile.iOS())
-{document.location.href="//m.html-editor.tk";}
-</script> -->
 <!--
 <script type="text/javascript">
 if (window.self !== window.top) {window.top.location.href = window.location.href;}</script> -->
