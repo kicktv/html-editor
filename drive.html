@@ -1,4 +1,33 @@
 <!DOCTYPE html><html lang="en"><head><meta charset="utf-8">
+<title>test video via input </title>
+<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">  
+<style  type="text/css">
+.form-control[autocomplete]{color: red;}​
+.btn-info {color: #fff;background-color: #fd0202;border-color: #fd0202;}
+.btn-info:hover {color: #fff;background-color: #31ff06;border-color: #31ff06;}
+video {object-fit:fill; width:800px; height:404px;  border: 1px solid #000; z-index:1;}
+@media only screen and (max-width:980px) {video{width:99%;height:auto;}}
+</style></head><body><center><h2>stream video google drive </h2><div id="box">
+<form action="javascript:loadVideo()">
+<div class="input-group col-lg-8">
+<input id="source" type="text" class="form-control input-lg ui-autocomplete-input" autocomplete="on" 
+value="https://drive.google.com/file/d/1P1WefStFxocw0BtbaBfK6n-3n5ffEVn6/view">
+<span class="input-group-btn"><button class="btn btn-info" style="height:46px;" type="submit">PLAY</button></span>
+</div></form></div>
+<br> <video  id="vid3"  width="100%"  height="100%"   controls poster="" src=""></video></center>
+<script type="text/javascript">
+function loadVideo() { var link = document.getElementById('source').value; 
+var id = link.split("/"); 
+var api = "https://www.googleapis.com/drive/v3/files/"+id[5]+"?alt=media&key=AIzaSyAgJNu0Gt0vAFVCN3g0fqlRrksIrscRiLM"; 
+var url = document.getElementById('vid3'); 
+url.src = api;} 
+</script></body></html>
+
+<!--
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8">
 <title> stream google drive </title><style type="text/css">
 html,body {height:100%; width:100%; padding:0px; margin:0px;}
 video {object-fit:fill;position:fixed; height:100%;width:100%; padding:0px; margin:0px;}
@@ -14,7 +43,7 @@ var url="https://www.googleapis.com/drive/v3/files/"+id+"?alt=media&key=AIzaSyA-
 document.getElementById("app").src=url;
 var img = "https://drive.google.com/thumbnail?id="+id+"&authuser=0&sz=w640-h360-n-k-rw";
 document.getElementById("app").poster=img;
-</script></body></html>
+</script></body></html> -->
 <!--
 http://www.html-editor.tk/drive.html?id=1OB-7J66gUgnL1zMsrwQR3DC_xr_3SOI7
 my api drive
