@@ -1,0 +1,26 @@
+<VAST version="3.0">
+<Ad id="2400994">
+<InLine>
+<AdSystem>Stream</AdSystem>
+<AdTitle/>
+<Error> </Error>
+<Creatives>
+<Creative sequence="1" id="20589484">
+<Linear skipoffset="00:00:06">
+<Duration>00:00:20.96</Duration>
+<TrackingEvents>
+<Tracking event="progress" offset="00:00:10.000"> </Tracking>
+</TrackingEvents>
+<VideoClicks>
+<ClickThrough>https://www.youtube.com/watch?v=bwWYkp4LfcM</ClickThrough>
+<ClickTracking>gif.png</ClickTracking>
+</VideoClicks>
+<MediaFiles>
+<MediaFile delivery="progressive" type="video/mp4"> https://kicktv.github.io/html-editor/videos/sintel.mp4 </MediaFile>
+</MediaFiles>
+</Linear>
+</Creative>
+</Creatives>
+</InLine>
+</Ad>
+</VAST>
