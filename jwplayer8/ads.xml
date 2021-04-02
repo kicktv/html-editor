@@ -7,9 +7,9 @@
 <Creatives>
 <Creative sequence="1" id="20589484">
 <Linear skipoffset="00:00:04">
-<Duration>00:00:10.96</Duration>
+<Duration>00:00:06</Duration>
 <TrackingEvents>
-<Tracking event="progress" offset="00:00:10.000"> </Tracking>
+<Tracking event="progress" offset="00:00:10"> </Tracking>
 </TrackingEvents>
 <VideoClicks>
 <ClickThrough>https://www.youtube.com/watch?v=bwWYkp4LfcM</ClickThrough>
