@@ -13,7 +13,7 @@
 </TrackingEvents>
 <VideoClicks>
 <ClickThrough>https://www.youtube.com/watch?v=bwWYkp4LfcM</ClickThrough>
-<ClickTracking>gif.png</ClickTracking>
+<ClickTracking>https://jumptv.github.io/img/mbc3.png</ClickTracking>
 </VideoClicks>
 <MediaFiles>
 <MediaFile delivery="progressive" type="video/mp4"> https://kicktv.github.io/html-editor/videos/sintel.mp4 </MediaFile>
