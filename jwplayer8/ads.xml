@@ -6,10 +6,10 @@
 <Error> </Error>
 <Creatives>
 <Creative sequence="1" id="20589484">
-<Linear skipoffset="00:04">
-<Duration>00:06</Duration>
+<Linear skipoffset="10">
+<Duration>08</Duration>
 <TrackingEvents>
-<Tracking event="progress" offset="00:10"> </Tracking>
+<Tracking event="progress" offset="10"> </Tracking>
 </TrackingEvents>
 <VideoClicks>
 <ClickThrough>https://www.youtube.com/watch?v=bwWYkp4LfcM</ClickThrough>
