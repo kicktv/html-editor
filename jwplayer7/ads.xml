@@ -1,0 +1,26 @@
+<VAST version="3.0">
+<Ad id="2400994">
+<InLine>
+<AdSystem>Stream</AdSystem>
+<AdTitle/>
+<Error> </Error>
+<Creatives>
+<Creative sequence="1" id="20589484">
+<Linear skipoffset="10">
+<Duration>08</Duration>
+<TrackingEvents>
+<Tracking event="progress" offset="10"> </Tracking>
+</TrackingEvents>
+<VideoClicks>
+<ClickThrough>https://www.youtube.com/watch?v=bwWYkp4LfcM</ClickThrough>
+<ClickTracking>https://jumptv.github.io/img/mbc3.png</ClickTracking>
+</VideoClicks>
+<MediaFiles>
+<MediaFile delivery="progressive" type="video/mp4"> https://kicktv.github.io/html-editor/video.mp4 </MediaFile>
+</MediaFiles>
+</Linear>
+</Creative>
+</Creatives>
+</InLine>
+</Ad>
+</VAST>
