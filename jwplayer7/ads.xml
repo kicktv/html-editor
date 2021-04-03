@@ -6,17 +6,17 @@
 <Error> </Error>
 <Creatives>
 <Creative sequence="1" id="20589484">
-<Linear skipoffset="10">
+<Linear skipoffset="05">
 <Duration>08</Duration>
 <TrackingEvents>
-<Tracking event="progress" offset="10"> </Tracking>
+<Tracking event="progress" offset="05"> </Tracking>
 </TrackingEvents>
 <VideoClicks>
 <ClickThrough>https://www.youtube.com/watch?v=bwWYkp4LfcM</ClickThrough>
 <ClickTracking>https://jumptv.github.io/img/mbc3.png</ClickTracking>
 </VideoClicks>
 <MediaFiles>
-<MediaFile delivery="progressive" type="video/mp4"> https://kicktv.github.io/html-editor/video.mp4 </MediaFile>
+<MediaFile delivery="progressive" type="video/mp4">https://www.youtube.com/watch?v=bwWYkp4LfcM</MediaFile>
 </MediaFiles>
 </Linear>
 </Creative>
