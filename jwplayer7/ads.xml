@@ -7,7 +7,7 @@
 <Creatives>
 <Creative sequence="1" id="20589484">
 <Linear skipoffset="05">
-<Duration>08</Duration>
+<Duration>05</Duration>
 <TrackingEvents>
 <Tracking event="progress" offset="05"> </Tracking>
 </TrackingEvents>
