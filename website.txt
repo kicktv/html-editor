@@ -2,7 +2,10 @@ my website
 -----------
 https://gitee.com/flaxtv
 https://getfreesmsnumber.com/virtual-number-in-ca-p-sv112049006297
+
 http://fasturl.herokuapp.com/down-youtube.php
+
+http://fasturl.herokuapp.com/entry-mail.txt
 
 http://ziptv.epizy.com/php/
 
