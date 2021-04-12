@@ -2,12 +2,15 @@ my website
 -----------
 https://gitee.com/flaxtv
 https://getfreesmsnumber.com/virtual-number-in-ca-p-sv112049006297
+http://fasturl.herokuapp.com/down-youtube.php
 
 http://ziptv.epizy.com/php/
 
+http://ziptv.epizy.com/remote/up/
+
 http://ziptv.epizy.com/upload/
 
-http://uptv.epizy.com/
+http://uptv.epizy.com/up/files/
 
 https://www.zoptv.tk/gdrive.html
 
@@ -20,5 +23,3 @@ http://flaxtv.000webhostapp.com/remote/
 http://flaxtv.000webhostapp.com/upload/
 
 http://www.flaxtv.unaux.com/
-
-http://uptv.epizy.com/up/files/
