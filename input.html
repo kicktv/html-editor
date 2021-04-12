@@ -30,7 +30,7 @@ video {object-fit:fill; width:800px; height:404px;  border: 1px solid #000; z-in
 var url = (window.location != window.parent.location)
 ? document.referrer
 : document.location.href;
-url = parent.document.URL;
+var url = parent.document.URL;
 document.write('<iframe src="http://www.html-editor.tk/input.html + url + '">');
 document.write('<iframe src='+url + '"></iframe>');
 </script>
