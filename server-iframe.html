@@ -1,0 +1,38 @@
+﻿<style>
+.fram {max-width:980px;}
+.embed-video{position: relative; width:99%; padding-bottom: 56.25%; height: 0; }
+iframe{position: absolute; top: 0; left: 0; width: 100%; height:90%; opacity: .9; }
+@media only screen and (max-width:1000px) {iframe{height:83%;}}
+
+.btn {none;border: none;outline: none;padding: 10px 16px;background-color: red;cursor: pointer;font-size: 18px;}
+
+a {text-decoration: none;font-family: arial; color: yellow; text-align: center;  padding: 3px;}
+
+/* Style the active class, and buttons on mouse-over */
+.active, .btn:hover {background-color: #666; color:white;}
+</style>
+<center><br><br>
+<div class='fram'>
+<div id="myDIV">
+<a class="btn" href="https://www.youtube.com/embed/0Y-IRcUJi6o" target="myifram">server1</a>
+<a class="btn" href="https://ok.ru/videoembed/427652221662" target="myifram">server2</a>
+<a class="btn" href="http://bomtv.gitlab.io/live/2m.html" target="myifram">server3</a>
+<a class="btn" href="#" target="myifram">server4</a>
+<a class="btn" href="#" target="myifram">server5</a>
+</div><br>
+
+<div class='embed-video'>
+<iframe  name="myifram" allowfullscreen="allowfullscreen" scrolling="no" rel="nofollow" 
+src="https://www.youtube.com/embed/0Y-IRcUJi6o" width="100%" height="100%" frameborder="0"></iframe>
+</div></div></center>
+
+<script>
+// Add active class to the current button (highlight it)
+var header = document.getElementById("myDIV");
+var btns = header.getElementsByClassName("btn");
+for (var i = 0; i < btns.length; i++) {
+btns[i].addEventListener("click", function() {
+var current = document.getElementsByClassName("active");
+if (current.length > 0) {current[0].className = current[0].className.replace(" active", "");}
+this.className += " active"; }); }
+</script>
