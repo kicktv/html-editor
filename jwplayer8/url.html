@@ -4,9 +4,12 @@
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
 <script src="jwplayer8.js" type="text/javascript"></script>
 </head><body><script type="text/javascript">
-function gup(e){e=e.replace(/[\[]/,"\\[").replace(/[\]]/,"\\]");var n="[\\?&]"+e+"=([^&#]*)",l=new RegExp(n),c=l.exec(window.location.href);return null==c?"":unescape(c[1])}document.title="JWPlayer 7 MPEG-DASH "+gup("file");</script><style type="text/css">
+function gup(e){e=e.replace(/[\[]/,"\\[").replace(/[\]]/,"\\]");
+var n="[\\?&]"+e+"=([^&#]*)",l=new RegExp(n),c=l.exec(window.location.href);
+return null==c?"":unescape(c[1])}document.title="JWPlayer 7 MPEG-DASH "+gup("file");
+</script><style type="text/css">
 html {height: 100%; overflow: hidden;}#flashcontent {height: 100%;}body {height: 100%; margin: 0; padding: 0; background-color: #000;}</style>
-</head><body><div id="myElement">Loading the player...</div><script type="text/javascript">
+<div id="myElement">Loading the player...</div><script type="text/javascript">
 var file=gup("file");jwplayer.key="AEDNFtstbMiaUEt6n5r8diauF5pJeOwBKZuGgcfopzQ=";
 var playerInstance=jwplayer("myElement");playerInstance.setup({file:gup("file").replace(/(%)/g,"%25"),
 image:gup("image").replace(/(%)/g,"%25"),logo:{file:"img/logo-tv.png",
