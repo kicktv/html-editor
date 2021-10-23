@@ -74,7 +74,12 @@ h1 {font-family:impact, arial,tahoma ; color:#fe5900; font:bold 95%}
 @media only screen and (max-width:980px) {.textinput{width:98%;height:360px;}}</style>
 <script language="JavaScript">
 function preview(){temp=document.tester.box.value,preWindow=open("","preWindow"," menubar=yes, scrollbars=yes"),preWindow.document.open(),preWindow.document.write(temp),preWindow.document.close()}</script>
-</head><body><center><div class="overlay"><h1>HTML And Script Code Tester</h1></div>
+</head>
+<!-- statr code preloader -->
+<body onload="myFunction ()">
+<div class="preloader"><img src="preloader.gif" alt="preloader" style="width:100%;height:100%;"></div>
+<!-- end code preloader -->
+<center><div class="overlay"><h1>HTML And Script Code Tester</h1></div>
 <form name="tester"><textarea  class="textinput"   wrap="physical" name="box"></textarea><br/>
 <input class="btn1" type="button" value="Test HTML Code" onClick="preview()">
 <input class="btn2" type="reset" value="Clear Text Box"></form><br/>
@@ -99,7 +104,11 @@ setInterval(changeColor, 7000)</script>
 var links = document.getElementsByTagName("a");
 for (var i=0; i<links.length; i++) {
 if (links[i].href.indexOf('html-editor.tk') == -1) {
-links[i].href = 'redirect.html?url=' + links[i].href;}} </script></body></html>
+links[i].href = 'redirect.html?url=' + links[i].href;}} </script>
+<script>
+//code js preloader
+function myFunction () {document.querySelector('.preloader ').style.display = 'none'}
+</script></body></html>
 <!-- http://www.csgnetwork.com/htmlcodetest.html -->
 <!--
 <style type="text/css">
