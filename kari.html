@@ -1,0 +1,12 @@
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<div id="external"></div>
+<script>
+ $(document).ready(function(){
+var url = 'http://khaledphp.herokuapp.com/ip.php';
+     $.get(url, function(response) {
+          $('div#external').html(response);
+     });
+});
+</script>
+
+
