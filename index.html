@@ -95,7 +95,17 @@ function preview(){temp=document.tester.box.value,preWindow=open("","preWindow",
 <!-- statr code preloader -->
 <!-- <body onload="myFunction ()"><div class="preloader"></div> -->
 <!-- end code preloader -->
-<body><center><div class="overlay"><h1>HTML And Script Code Tester</h1></div>
+
+
+  
+<body><center><div class="overlay">
+  
+<style>#protector {height: 100%;width: 100%;position: absolute;left: 0;top: 0;z-index: 99999999;}</style>
+<div id="protector"><a href="/" target="_blank">Go to the site</a></div>
+<script>if (top.document.domain == document.domain) {protector.remove();}</script>
+  
+  
+<h1>HTML And Script Code Tester</h1></div>
 <form name="tester"><textarea  class="textinput"   wrap="physical" name="box"></textarea><br/>
 <input class="btn1" type="button" value="Test HTML Code" onClick="preview()">
 <input class="btn2" type="reset" value="Clear Text Box"></form><br/>
