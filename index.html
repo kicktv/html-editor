@@ -97,6 +97,16 @@ function preview(){temp=document.tester.box.value,preWindow=open("","preWindow",
 <!-- <body onload="myFunction ()"><div class="preloader"></div> -->
 <!-- end code preloader -->
 <body><center><div class="overlay">
+
+<script>
+var i = 0;
+function change() {
+var color = ["#737177", "#868ba2", "#8e7f00", "brown", "#086386"];
+document.body.style.background = color[i] + " url('body.png')"; 
+i = (i + 1) % color.length; }
+setInterval(change, 5000);
+</script>
+
 <h1>HTML And Script Code Tester</h1></div>
 <form name="tester"><textarea  class="textinput"   wrap="physical" name="box"></textarea><br/>
 <input class="btn1" type="button" value="Test HTML Code" onClick="preview()">
