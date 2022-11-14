@@ -44,6 +44,15 @@ return location.href.substr(1).split("&url=")[1].replace("&m=1", "").replace("&m
 <!-- يمكن إضافة الوصف هنــــــــــــا -->
 يمكنك الإطلاع أيضا على موضوع : طريقة تثبيت القائمة العلوية عند تمرير الصفحة للأسفل
 </div>
+
+<script>
+var dontblockurl= "facebook.com|whatsapp:";
+$(".post-body a").each(function() {
+var rNamePage= "redirect",
+e = new RegExp("(" + window.location.hostname + "|blogger.com|bp.blogspot.com|" + dontblockurl + ")");
+0 <= this.href.match(e) && 0 <= this.name.match("more") && !$(this).hasClass("zr") && ($(this).attr("href", window.location.origin + "/p/" + rNamePage + ".html?&url=" + $(this).attr("href")), $(this).attr("target", "_blank")) })
+</script>
+
 <!-- end code -->
 
 
@@ -78,7 +87,6 @@ var output = document.getElementById("displaySeconds");
 output.innerHTML = count;
 				
 // Decrease the remaining number of seconds by one.
-
 //count--;
 				
 // Check if the counter has reached zero.
