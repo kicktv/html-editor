@@ -1,3 +1,61 @@
+<!-- start  code -->
+<!-- source: http://www.teqniweb.com/2020/11/blog-post.html -->
+<div>
+<!-- يمكن إضافة الوصف هنــــــــــــا -->
+</div>
+<div id="pageredirect"></div>
+<style>
+.mCont { height: 250px; width: 250px; margin: 0 auto; text-align: center; border-radius: 100%; border: 20px solid #f8f8f8; position: relative; border-bottom-color: transparent }
+يمكنك الإطلاع أيضا على موضوع : طريقة إضافة موقعك إلى تحليلات جوجل Google Analytics
+.two { display: flex; align-items: center; text-align: center; justify-content: center; height: 100%; font-size: 80px; position: relative; top: -8px; font-weight: bold;}
+.border1 { position: absolute; top: -20px; left: -20px; right: -20px; width: 250px; height: 250px; border: 20px solid transparent; border-radius: 50%; border-bottom-color: #4267b2 }
+.border2 { position: absolute; top: -20px; left: -20px; right: -20px; width: 250px; height: 250px; border: 20px solid transparent; border-radius: 50%; border-bottom-color: #4267b2 }
+.border3 { position: absolute; top: -20px; left: -20px; right: -20px; width: 250px; height: 250px; border: 20px solid transparent; border-radius: 50%; border-bottom-color: #4267b2 }
+.border4 { position: absolute; top: -19px; left: -20px; right: -20px; width: 250px; height: 250px; border: 20px solid transparent; border-radius: 50%; border-bottom: 23px solid #fff }
+.zr { position: absolute; bottom: -10px; right: 0; left: 0; z-index: 999999; border-style: solid; border-width: 5px; border-color: rgba(0, 0, 0, 0.03); display: inline-block; background-color: #f8f8f8; padding: 5px 15px; width: 160px; font-size: 14px; margin: 0 auto; border-radius: 50px; color: #d2d2d2 !important; text-decoration: none }
+.run { cursor: progress }
+.act { cursor: pointer; color: #3c5b92 !important; border-color: rgba(44, 130, 201, 0.48); border-style: double; transition: all .3s }
+a.zr.act:hover { border-color: rgba(44, 130, 201, 0.48); background: rgba(44, 130, 201, 0.74); color: #fff !important }
+.dis { cursor: no-drop; background-color: #ffcfcf; color: #de6262 !important }
+</style>
+
+يمكنك الإطلاع أيضا على موضوع : أضف مدونتك في Bing بالطريقة الصحيحة (شرح بالصور)
+<script>
+//<![CDATA[
+b4_arr={'timer' : '4',
+'text-err' : 'الرابط معطل !',
+'text-ready' : 'الرابط جاهز',
+'text-Configure' : 'جاري تهيئة الرابط';
+var rConfigure = void 0 !== b4_arr["text-Configure"] ? b4_arr["text-Configure"] : "‏جاري تهيئة الرابط",
+rReady = void 0 !== b4_arr["text-ready"] ? b4_arr["text-ready"] : "الرابط جاهز",
+rError = void 0 !== b4_arr["text-err"] ? b4_arr["text-err"] : "رابط معطل",
+rTimer = void 0 !== b4_arr.timer ? b4_arr.timer : "5",
+rUrl = "false";
+$firstBorder = 0, rTimer <= 6 && (rTimer = 6), $pageredirecthtml = "<div class='notran safgasdg'><div class='notran mCont'><div class='notran two'>" + rTimer + "</div><a class='notran zr run' href='javascript:void(0)'>" + rConfigure + "</a><a class='notran zr act' href='javascript:void(0)' style='display: none'>" + rReady + "</a><a class='notran zr dis' href='javascript:void(0)' style='display: none'>" + rError + "</a><div class='notran border1'/><div class='notran border2'/><div class='notran border3'/><div class='notran border4'/></div></div>", $("#pageredirect").html($pageredirecthtml),
+يمكنك الإطلاع أيضا على موضوع : إحمي مدونتك بتعطيل زر F12
+$time = rTimer, $deggrea = 270 / $time, $deggre = 270 / $time, $work = !1, $q = $time / 3, $tt = function() { $work || ($time <= 0 ? (clearInterval(timing), $(".act").attr("href", rUrl), $(".run").hide(), "false" == $(".act").attr("href") || "javascript:void(0)" == $(".act").attr("href") || "undefined" == $(".act").attr("href") ? $(".dis").show() : ($(".act").show(), $(".act").attr("href") === "false" || void 0 === $(".act").attr("href") || window.location.replace($(".act").attr("href")))) : ($time--, $firstBorder++, 2 * $q <= $time && ($firstBorder == Math.floor($q) && ($deggre = 91), $(".border1").animate({ borderSpacing: $deggre }, { step: function(r, t) { $(this).css("transform", "rotate(" + r + "deg)") }, duration: 800 }, "ease-out")), $q <= $time && ($firstBorder == Math.floor(2 * $q) && ($deggre = 180), $(".border2").animate({ borderSpacing: $deggre }, { step: function(r, t) { $(this).css("transform", "rotate(" + r + "deg)") }, duration: 800 }, "ease-in-out")), $q >= $time && ($firstBorder == Math.floor(3 * $q) && ($deggre = 269), $(".border3").animate({ borderSpacing: $deggre }, { step: function(r, t) { $(this).css("transform", "rotate(" + r + "deg)") }, duration: 800 }, "ease-in-out")), $deggre += $deggrea, $(".two").text($time))) }; var timing = window.setInterval($tt, 800);
+$(window).mouseenter(function() { $work = !1 }), $(window).mouseleave(function() { $work = !0 }), String.prototype.replaceAll = function(r, t) { return this.split(r).join(t) }, rUrl = rUrl = decodeURIComponent(findGetParameter("url")), $(document).ready(function() { var r = window.location.toString(); if (0 < r.indexOf("?&url=")) { var t = r.substring(0, r.indexOf("?&url="));
+window.history.replaceState({}, document.title, t) } })
+
+function findGetParameter(r) {
+return location.href.substr(1).split("&url=")[1].replace("&m=1", "").replace("&m=0", "").replace("?m=1", "")
+}
+//]]>
+</script>
+
+<div>
+<!-- يمكن إضافة الوصف هنــــــــــــا -->
+يمكنك الإطلاع أيضا على موضوع : طريقة تثبيت القائمة العلوية عند تمرير الصفحة للأسفل
+</div>
+<!-- end code -->
+
+
+
+
+
+
+
+<!--
 <!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><title>api redirect </title>
 <script>
 function gup(e){e=e.replace(/[\[]/,"\\[").replace(/[\]]/,"\\]");
@@ -35,7 +93,8 @@ return ;}  }
 window.addEventListener("load", start, false);
 </script></head><body><center>
 <h1>Wait  <span id="displaySeconds">3</span> Seconds To Redirect</h1>
-</center></body></html> 
+</center></body></html> -->
+
 <!-- 
 http://www.html-editor.tk/redirect.html?url=http://www.khaledtv.ml/
 -->
