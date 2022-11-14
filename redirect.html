@@ -21,10 +21,11 @@ var output = document.getElementById("displaySeconds");
 output.innerHTML = count;
 				
 // Decrease the remaining number of seconds by one.
-//count--;
+count--;
 				
 // Check if the counter has reached zero.
-if (count < 0) { // If the counter has reached zero...
+if (count < 0) { 
+// If the counter has reached zero...
 // Stop the counter.
 clearInterval(counter);
 					
