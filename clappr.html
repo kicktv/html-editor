@@ -20,14 +20,16 @@ function get(e){e=e.replace(/[\[]/,"\\[").replace(/[\]]/,"\\]");
 var n="[\\?$]"+e+"=([^$#]*)",
 l=new RegExp(n),
 c=l.exec(window.location.href);
-return null==c?"http://www.html-editor.tk/video.mp4":unescape(c[1])}
+return null==c?"http://raw.githack.com/kicktv/html-editor/gh-pages/video.mp4":unescape(c[1])}
 var link=get("src");
 var player = new Clappr.Player(
 {source:link,
 poster: "",autoPlay:true,height:"100%",
 width:"100%",parentId: "#player",mediacontrol: {seekbar: "#ff1d04", buttons: "#ff1d04"},
-});</script><div class="overlay"><a block="" href="http://www.flaxtv.ga/" target="_blank">
-<h1>www.flaxtv.ga</h1></a></div></body></html>
+});</script>
+<!-- <div class="overlay"><a block="" href="http://www.flaxtv.ga/" target="_blank">
+<h1>www.flaxtv.ga</h1></a></div> -->
+</body></html>
 <!--
 http://www.html-editor.tk/clappr.html?src=https://documentary.streaming.aljazeera.net/apple/aljazeera/doc/appleman806.m3u8
 -->
