@@ -12,11 +12,8 @@ z-index: 2;margin-left:-74px;width:70px;height:40px;} video{object-fit:fill}
 @media only screen and (max-width:540px) {#example-video{width:99%;height:240px;}}
 @media only screen and (max-width:400px) {#example-video{width:99%;height:210px;}}
 </style>
- 
-<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
 
- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/video.js/7.12.0/video-js.min.css" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/video.js/7.12.0/video-js.min.css"/>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/video.js/7.12.0/video.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/videojs-youtube/2.6.1/Youtube.min.js"></script>
  
@@ -25,10 +22,13 @@ z-index: 2;margin-left:-74px;width:70px;height:40px;} video{object-fit:fill}
 <button type="submit"  class="btn">Load</button></form><br>
 <video id=example-video width="860" height="440" class="video-js vjs-default-skin" controls><source
  src="https://live-hls-web-aja.getaj.net/AJA/04.m3u8" type="application/x-mpegURL"></video></center>
+ 
+
     <link href="https://unpkg.com/video.js/dist/video-js.css" rel="stylesheet">
     <script src="https://unpkg.com/video.js/dist/video.js"></script>
     <script src="https://unpkg.com/videojs-flash/dist/videojs-flash.js"></script>
     <script src="https://unpkg.com/videojs-contrib-hls/dist/videojs-contrib-hls.js"></script>
+ 
     <script> (function(window,videojs){var player=window.player=videojs('example-video');
 var loadUrl=document.getElementById('load-url');
 var url=document.getElementById('url');loadUrl.addEventListener('submit',
