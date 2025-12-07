@@ -2,11 +2,33 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no' name='viewport'/>
 <title> Teste Jwplayer7</title>
-<style>.container {max-width: 800px;margin: 0 auto;}</style>
+<style>.container {max-width: 800px;margin: 0 auto;}
+/* Logo text style */
+#logoText {
+position: fixed;
+font-size: 4vw;
+padding: 40px;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+color: rgba(0, 0, 0, 0.2);
+font-family: Arial, sans-serif;
+z-index: 99999;
+pointer-events: none;
+font-weight: bold;
+//color: #ffffffb3; /* soft white */
+//text-shadow: 0 0 4px #000; /* better visibility */
+}
+@media only screen and (max-width: 767px) {
+#logoText {font-size: 7vw; /* Larger font size for mobile */}
+}
+</style>
 <script src="jwplayer.js"></script>
 <script type="text/javascript">jwplayer.key="XYS/ica6YQUMq9rC6J2E77obUFoIPLeM";</script>
 <center> <h1> Teste Jwplayer7 hls  </h1> </center>
-<div class="container"><div id="myJWplayer">Loading the player...</div></div>
+<div class="container"><div id="myJWplayer">Loading the player...</div>
+<div id="logoText">flaxtv.blogspot.com</div>
+</div>
 <script type="text/javascript">
 var iptv = "https://live.alarabiya.net/alarabiapublish/alarabiya.smil/playlist.m3u8";
 jwplayer("myJWplayer").setup({
@@ -20,4 +42,22 @@ title: 'Basic Video Embed',
 description: 'A video with a basic title and description',
 skin: {name:"bekle", active:"lime", inactive:"white", background:"rgba(0, 0, 0, 0.3)",}
 });
+  
+// Handle fullscreen detection to keep logo visible
+function moveLogoToFullscreen() {
+  const logo = document.getElementById('logoText');
+  const fullscreenElement = document.fullscreenElement;
+
+  if (fullscreenElement) {
+    fullscreenElement.appendChild(logo); // move inside fullscreen
+    logo.style.position = "absolute";
+  } else {
+    document.body.appendChild(logo); // move back to normal
+    logo.style.position = "fixed";
+  }
+}
+
+// Detect fullscreen changes for all browsers
+['fullscreenchange', 'webkitfullscreenchange', 'mozfullscreenchange', 'msfullscreenchange']
+  .forEach(evt => document.addEventListener(evt, moveLogoToFullscreen));
 </script></body></html>
